@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><!DOCTYPE TEAMS_ASSET_FILE [
+<!ENTITY file1 SYSTEM "\\nlwlum040\priint\20191011132149\PRS_H1_12258_WVU_12V_9287602120PL_DRAFT.pdf" NDATA application_pdf>
+<!ENTITY file2 SYSTEM "\\nlwlum040\priint\20191011132149\PRS_H7_12972_XVG_12V_9287601267PL_DRAFT.pdf" NDATA application_pdf>
+<!ENTITY file3 SYSTEM "\\nlwlum040\priint\20191011132149\PRS_999999999902_DRAFT.pdf" NDATA application_pdf>
+]>
+<TEAMS_ASSET_FILE>
+    <ASSETS>
+        <ASSET>
+            <METADATA>
+                <UOIS usage="internal" filename="PRS_H1_12258_WVU_12V_9287602120PL_DRAFT.pdf" version="0" publication="PRS" categoryid="PS_Ind_Doc_001" productid="9287602120PL" mime="application/pdf" date="10/11/2019" language="eng" country="" approval-date="2019-10-03" approver="Rasmus Klinge" creation-date="2019-10-01" creator="Industrial Editor" validation-date="2019-10-02" validator="Rasmus Klinge" Factory_SAP="" Technology="Halogen 1-Filament" Type_Number_SAP="12258" Additional_name_SAP="WVU" Rated_Voltage_SAP="12V" Rated_Wattage_SAP="55W" Com_PG_Code="" Type_SAP="H1" Packaging_Type_SAP="" Application_SAP="" Product_Grouping_SAP=""/>
+            </METADATA>
+            <CONTENT>
+                <MASTER FILE="file1"/>
+            </CONTENT>
+        </ASSET>
+        <ASSET>
+            <METADATA>
+                <UOIS usage="internal" filename="PRS_H7_12972_XVG_12V_9287601267PL_DRAFT.pdf" version="0" publication="PRS" categoryid="PS_Ind_Doc_001" productid="9287601267PL" mime="application/pdf" date="10/11/2019" language="eng" country="" approval-date="2019-10-03" approver="Rasmus Klinge" creation-date="2019-10-01" creator="Industrial Editor" validation-date="2019-10-02" validator="Rasmus Klinge" Factory_SAP="" Technology="Halogen 1-Filament" Type_Number_SAP="12972" Additional_name_SAP="XVG" Rated_Voltage_SAP="12V" Rated_Wattage_SAP="55W" Com_PG_Code="" Type_SAP="H7" Packaging_Type_SAP="" Application_SAP="" Product_Grouping_SAP=""/>
+            </METADATA>
+            <CONTENT>
+                <MASTER FILE="file2"/>
+            </CONTENT>
+        </ASSET>
+        <ASSET>
+            <METADATA>
+                <UOIS usage="internal" filename="PRS_999999999902_DRAFT.pdf" version="0" publication="PRS" categoryid="PS_Ind_Doc_001" productid="999999999902" mime="application/pdf" date="10/11/2019" language="eng" country="" approval-date="" approver="Rasmus Klinge" creation-date="2019-10-04" creator="Industrial Editor" validation-date="" validator="Rasmus Klinge" Factory_SAP="" Technology="" Type_Number_SAP="" Additional_name_SAP="" Rated_Voltage_SAP="" Rated_Wattage_SAP="" Com_PG_Code="" Type_SAP="" Packaging_Type_SAP="" Application_SAP="" Product_Grouping_SAP=""/>
+            </METADATA>
+            <CONTENT>
+                <MASTER FILE="file3"/>
+            </CONTENT>
+        </ASSET>
+    </ASSETS>
+</TEAMS_ASSET_FILE>
