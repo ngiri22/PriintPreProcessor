@@ -30,7 +30,7 @@ import com.lumileds.nttdata.otmm.priint.data.AssetMetadata;
 
 public class AssetsXMLWriter {
 
-	private final Logger logger = LoggerFactory.getLogger(FileMover.class);
+	private final Logger logger = LoggerFactory.getLogger(FilesUtility.class);
 
 	public void generateXML(List<AssetMetadata> assetMetadataList, 
 			CharSequence folderPattern) {
@@ -99,10 +99,9 @@ public class AssetsXMLWriter {
 
 					j = j + 1 ;
 					
-					writer.println("<!ENTITY file_"+ j +" SYSTEM \" "+ 
-							assetMetadata.getFolderName() + "\\" +
+					writer.println("<!ENTITY file_"+ j +" SYSTEM \""+ 
 							assetMetadata.getName() + 
-							" \" NDATA application_pdf>");
+							"\" NDATA application_pdf>");
 
 				}
 

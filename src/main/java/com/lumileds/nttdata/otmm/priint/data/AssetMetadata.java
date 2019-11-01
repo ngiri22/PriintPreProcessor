@@ -11,6 +11,7 @@ public class AssetMetadata {
 	private String name;
 	
 	private String folderName;
+	private String destinationFolder;
 	
 	private String assetOwner;
 	
