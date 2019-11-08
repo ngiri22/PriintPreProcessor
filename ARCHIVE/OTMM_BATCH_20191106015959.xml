@@ -1,0 +1,666 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE TEAMS_ASSET_FILE [<!ENTITY file1 SYSTEM "20191106015959\PRS_H3fit_12455_RA_12V_9247581171PL.pdf" NDATA application_pdf>
+<!ENTITY file2 SYSTEM "20191106015959\PRS_H1_12454_RA_12V_9240075171PL.pdf" NDATA application_pdf>
+<!ENTITY file3 SYSTEM "20191106015959\PRS_9285999095PL_DRAFT.pdf" NDATA application_pdf>
+<!ENTITY file4 SYSTEM "20191106015959\PRS_TEST IPR_TEST IPR_9237995301PL_DRAFT.pdf" NDATA application_pdf>
+<!ENTITY file5 SYSTEM "20191106015959\PRS_9285999093PL_DRAFT.pdf" NDATA application_pdf>
+<!ENTITY file6 SYSTEM "20191106015959\PRS_9237971502PL_DRAFT.pdf" NDATA application_pdf>
+<!ENTITY file7 SYSTEM "20191106015959\PRS_9285999080PL_DRAFT.pdf" NDATA application_pdf>
+<!ENTITY file8 SYSTEM "20191106015959\PRS_9285999002PL_DRAFT.pdf" NDATA application_pdf>
+<!ENTITY file9 SYSTEM "20191106015959\PRS_LY3A_21201_13.5V_9277900050PL.pdf" NDATA application_pdf>
+<!ENTITY file10 SYSTEM "20191106015959\PRS_GARAGE KIT_12V_9247690010PL.pdf" NDATA application_pdf>
+<!ENTITY file11 SYSTEM "20191106015959\PRS_H7_12972_EL_12V_9239502171PL.pdf" NDATA application_pdf>
+<!ENTITY file12 SYSTEM "20191106015959\PRS_9277900011PL_DRAFT.pdf" NDATA application_pdf>
+<!ENTITY file13 SYSTEM "20191106015959\PRS_9277900004PL_DRAFT.pdf" NDATA application_pdf>
+<!ENTITY file14 SYSTEM "20191106015959\PRS_9285412171PL_DRAFT.pdf" NDATA application_pdf>
+<!ENTITY file15 SYSTEM "20191106015959\PRS_9287600423PL_DRAFT.pdf" NDATA application_pdf>
+<!ENTITY file16 SYSTEM "20191106015959\PRS_9285358244PL_DRAFT.pdf" NDATA application_pdf>
+<!ENTITY file17 SYSTEM "20191106015959\PRS_12.8V_9248407179PL_DRAFT.pdf" NDATA application_pdf>
+<!ENTITY file18 SYSTEM "20191106015959\PRS_9230445171PL_DRAFT.pdf" NDATA application_pdf>
+<!ENTITY file19 SYSTEM "20191106015959\PRS_9287600207PL_DRAFT.pdf" NDATA application_pdf>
+<!ENTITY file20 SYSTEM "20191106015959\PRS_LED PES module_LPM20_6000K_12V_9237932171PL.pdf" NDATA application_pdf>
+<!ENTITY file21 SYSTEM "20191106015959\PRS_9237935182PL_DRAFT.pdf" NDATA application_pdf>
+<!ENTITY file22 SYSTEM "20191106015959\PRS_9282701197PL_DRAFT.pdf" NDATA application_pdf>
+<!ENTITY file23 SYSTEM "20191106015959\PRS_9282701196PL_DRAFT.pdf" NDATA application_pdf>
+<!ENTITY file24 SYSTEM "20191106015959\PRS_9255030056PL.pdf" NDATA application_pdf>
+<!ENTITY file25 SYSTEM "20191106015959\PRS_9246221171PL_DRAFT.pdf" NDATA application_pdf>
+<!ENTITY file26 SYSTEM "20191106015959\PRS_9240274171PL_DRAFT.pdf" NDATA application_pdf>
+<!ENTITY file27 SYSTEM "20191106015959\PRS_9230025171PL_DRAFT.pdf" NDATA application_pdf>
+<!ENTITY file28 SYSTEM "20191106015959\PRS_Xenon HID Burner_85830_7K_85V_9285058294PL_DRAFT.pdf" NDATA application_pdf>
+<!ENTITY file29 SYSTEM "20191106015959\PRS_TEST CHRIS_TEST CHRIS_TEST CHRIS_TEST CHRIS_9285999095PL.pdf" NDATA application_pdf>
+<!ENTITY file30 SYSTEM "20191106015959\14V_9248407179PL.pdf" NDATA application_pdf>
+<!ENTITY file31 SYSTEM "20191106015959\PRS_H10fit_12082_12V_9230445171PL.pdf" NDATA application_pdf>
+<!ENTITY file32 SYSTEM "20191106015959\PRS_LED Reading light_12957_6000K_12V_9237995301PL.pdf" NDATA application_pdf>
+<!ENTITY file33 SYSTEM "20191106015959\PRS_T-5 LED_921_ULW_12V_9237935182PL.pdf" NDATA application_pdf>
+<!ENTITY file34 SYSTEM "20191106015959\PRS_LED FOG_11366_ULW_12V_9282701197PL.pdf" NDATA application_pdf>
+<!ENTITY file35 SYSTEM "20191106015959\PRS_LED [≈H7]_11972_ULW_12V_9282701196PL.pdf" NDATA application_pdf>
+<!ENTITY file36 SYSTEM "20191106015959\PRS_HiPer_12084_13.5V_9246221171PL.pdf" NDATA application_pdf>
+<!ENTITY file37 SYSTEM "20191106015959\PRS_P21W_13498_24V_9226737205PL.pdf" NDATA application_pdf>
+<!ENTITY file38 SYSTEM "20191106015959\PRS_HB3_9005_WHV_12.8V_9235098179PL.pdf" NDATA application_pdf>
+<!ENTITY file39 SYSTEM "20191106015959\PRS_TC600i_TC60I_not applic._9285999093PL_DRAFT.pdf" NDATA application_pdf>
+<!ENTITY file40 SYSTEM "20191106015959\PRS_ADR800S_ADR80_S_not applic._9285999080PL.pdf" NDATA application_pdf>
+<!ENTITY file41 SYSTEM "20191106015959\PRS_FILT 201 ACA_50988_GP_12V_9285999002PL.pdf" NDATA application_pdf>
+<!ENTITY file42 SYSTEM "20191106015959\PRS_LR5B_21312_13.5V_9277900011PL.pdf" NDATA application_pdf>
+<!ENTITY file43 SYSTEM "20191106015959\PRS_LR3B_21302_13.5V_9277900004PL.pdf" NDATA application_pdf>
+<!ENTITY file44 SYSTEM "20191106015959\PRS_D5S_BUXV+_12V_9285412171PL.pdf" NDATA application_pdf>
+<!ENTITY file45 SYSTEM "20191106015959\PRS_RCH21S LED Lamp_LPL61_220V_9237971502PL.pdf" NDATA application_pdf>]>
+<TEAMS_ASSET_FILE>
+    <ASSETS>
+        <ASSET>
+            <METADATA>
+                <UOIS AUTHOR="PRINTSUITE" SUBJECT="9247581171PL" MODEL_ID="105" NAME="PRS_H3fit_12455_RA_12V_9247581171PL.pdf">
+                    <LUM_MD_FILE_INFO ASSET_OWNER="PMM^Aachen"/>
+                    <LUM_MD_DIGI_HUB_INFO WCMS_CONFIDENTIALITY="Not Publishing"/>
+                    <LUM_MD_MEDIA_INFO_TAB REGIONS="Independent"/>
+                    <LUM_MD_MEDIA_INFO ASSET_TYPE="PRS" KEYWORDS="FINAL" BRAND="Lumileds"/>
+                    <SECURITY_POLICY_UOIS SEC_POLICY_ID="18"/>
+                </UOIS>
+            </METADATA>
+            <CONTENT>
+                <MASTER FILE="file1"/>
+            </CONTENT>
+        </ASSET>
+        <ASSET>
+            <METADATA>
+                <UOIS AUTHOR="PRINTSUITE" SUBJECT="9240075171PL" MODEL_ID="105" NAME="PRS_H1_12454_RA_12V_9240075171PL.pdf">
+                    <LUM_MD_FILE_INFO ASSET_OWNER="PMM^Aachen"/>
+                    <LUM_MD_DIGI_HUB_INFO WCMS_CONFIDENTIALITY="Not Publishing"/>
+                    <LUM_MD_MEDIA_INFO_TAB REGIONS="Independent"/>
+                    <LUM_MD_MEDIA_INFO ASSET_TYPE="PRS" KEYWORDS="FINAL" BRAND="Lumileds"/>
+                    <SECURITY_POLICY_UOIS SEC_POLICY_ID="18"/>
+                </UOIS>
+            </METADATA>
+            <CONTENT>
+                <MASTER FILE="file2"/>
+            </CONTENT>
+        </ASSET>
+        <ASSET>
+            <METADATA>
+                <UOIS AUTHOR="PRINTSUITE" SUBJECT="9285999095PL" MODEL_ID="105" NAME="PRS_9285999095PL_DRAFT.pdf">
+                    <LUM_MD_FILE_INFO ASSET_OWNER="PMM^Aachen"/>
+                    <LUM_MD_DIGI_HUB_INFO WCMS_CONFIDENTIALITY="Not Publishing"/>
+                    <LUM_MD_MEDIA_INFO_TAB REGIONS="Independent"/>
+                    <LUM_MD_MEDIA_INFO ASSET_TYPE="PRS" KEYWORDS="DRAFT" BRAND="Lumileds"/>
+                    <SECURITY_POLICY_UOIS SEC_POLICY_ID="18"/>
+                </UOIS>
+            </METADATA>
+            <CONTENT>
+                <MASTER FILE="file3"/>
+            </CONTENT>
+        </ASSET>
+        <ASSET>
+            <METADATA>
+                <UOIS AUTHOR="PRINTSUITE" SUBJECT="9237995301PL" MODEL_ID="105" NAME="PRS_TEST IPR_TEST IPR_9237995301PL_DRAFT.pdf">
+                    <LUM_MD_FILE_INFO ASSET_OWNER="PMM^Aachen"/>
+                    <LUM_MD_DIGI_HUB_INFO WCMS_CONFIDENTIALITY="Not Publishing"/>
+                    <LUM_MD_MEDIA_INFO_TAB REGIONS="Independent"/>
+                    <LUM_MD_MEDIA_INFO ASSET_TYPE="PRS" KEYWORDS="DRAFT" BRAND="Lumileds"/>
+                    <SECURITY_POLICY_UOIS SEC_POLICY_ID="18"/>
+                </UOIS>
+            </METADATA>
+            <CONTENT>
+                <MASTER FILE="file4"/>
+            </CONTENT>
+        </ASSET>
+        <ASSET>
+            <METADATA>
+                <UOIS AUTHOR="PRINTSUITE" SUBJECT="9285999093PL" MODEL_ID="105" NAME="PRS_9285999093PL_DRAFT.pdf">
+                    <LUM_MD_FILE_INFO ASSET_OWNER="PMM^Aachen"/>
+                    <LUM_MD_DIGI_HUB_INFO WCMS_CONFIDENTIALITY="Not Publishing"/>
+                    <LUM_MD_MEDIA_INFO_TAB REGIONS="Independent"/>
+                    <LUM_MD_MEDIA_INFO ASSET_TYPE="PRS" KEYWORDS="DRAFT" BRAND="Lumileds"/>
+                    <SECURITY_POLICY_UOIS SEC_POLICY_ID="18"/>
+                </UOIS>
+            </METADATA>
+            <CONTENT>
+                <MASTER FILE="file5"/>
+            </CONTENT>
+        </ASSET>
+        <ASSET>
+            <METADATA>
+                <UOIS AUTHOR="PRINTSUITE" SUBJECT="9237971502PL" MODEL_ID="105" NAME="PRS_9237971502PL_DRAFT.pdf">
+                    <LUM_MD_FILE_INFO ASSET_OWNER="PMM^Aachen"/>
+                    <LUM_MD_DIGI_HUB_INFO WCMS_CONFIDENTIALITY="Not Publishing"/>
+                    <LUM_MD_MEDIA_INFO_TAB REGIONS="Independent"/>
+                    <LUM_MD_MEDIA_INFO ASSET_TYPE="PRS" KEYWORDS="DRAFT" BRAND="Lumileds"/>
+                    <SECURITY_POLICY_UOIS SEC_POLICY_ID="18"/>
+                </UOIS>
+            </METADATA>
+            <CONTENT>
+                <MASTER FILE="file6"/>
+            </CONTENT>
+        </ASSET>
+        <ASSET>
+            <METADATA>
+                <UOIS AUTHOR="PRINTSUITE" SUBJECT="9285999080PL" MODEL_ID="105" NAME="PRS_9285999080PL_DRAFT.pdf">
+                    <LUM_MD_FILE_INFO ASSET_OWNER="PMM^Aachen"/>
+                    <LUM_MD_DIGI_HUB_INFO WCMS_CONFIDENTIALITY="Not Publishing"/>
+                    <LUM_MD_MEDIA_INFO_TAB REGIONS="Independent"/>
+                    <LUM_MD_MEDIA_INFO ASSET_TYPE="PRS" KEYWORDS="DRAFT" BRAND="Lumileds"/>
+                    <SECURITY_POLICY_UOIS SEC_POLICY_ID="18"/>
+                </UOIS>
+            </METADATA>
+            <CONTENT>
+                <MASTER FILE="file7"/>
+            </CONTENT>
+        </ASSET>
+        <ASSET>
+            <METADATA>
+                <UOIS AUTHOR="PRINTSUITE" SUBJECT="9285999002PL" MODEL_ID="105" NAME="PRS_9285999002PL_DRAFT.pdf">
+                    <LUM_MD_FILE_INFO ASSET_OWNER="PMM^Aachen"/>
+                    <LUM_MD_DIGI_HUB_INFO WCMS_CONFIDENTIALITY="Not Publishing"/>
+                    <LUM_MD_MEDIA_INFO_TAB REGIONS="Independent"/>
+                    <LUM_MD_MEDIA_INFO ASSET_TYPE="PRS" KEYWORDS="DRAFT" BRAND="Lumileds"/>
+                    <SECURITY_POLICY_UOIS SEC_POLICY_ID="18"/>
+                </UOIS>
+            </METADATA>
+            <CONTENT>
+                <MASTER FILE="file8"/>
+            </CONTENT>
+        </ASSET>
+        <ASSET>
+            <METADATA>
+                <UOIS AUTHOR="PRINTSUITE" SUBJECT="9277900050PL" MODEL_ID="105" NAME="PRS_LY3A_21201_13.5V_9277900050PL.pdf">
+                    <LUM_MD_FILE_INFO ASSET_OWNER="PMM^Aachen"/>
+                    <LUM_MD_DIGI_HUB_INFO WCMS_CONFIDENTIALITY="Not Publishing"/>
+                    <LUM_MD_MEDIA_INFO_TAB REGIONS="Independent"/>
+                    <LUM_MD_MEDIA_INFO ASSET_TYPE="PRS" KEYWORDS="FINAL" BRAND="Lumileds"/>
+                    <SECURITY_POLICY_UOIS SEC_POLICY_ID="18"/>
+                </UOIS>
+            </METADATA>
+            <CONTENT>
+                <MASTER FILE="file9"/>
+            </CONTENT>
+        </ASSET>
+        <ASSET>
+            <METADATA>
+                <UOIS AUTHOR="PRINTSUITE" SUBJECT="9247690010PL" MODEL_ID="105" NAME="PRS_GARAGE KIT_12V_9247690010PL.pdf">
+                    <LUM_MD_FILE_INFO ASSET_OWNER="PMM^Aachen"/>
+                    <LUM_MD_DIGI_HUB_INFO WCMS_CONFIDENTIALITY="Not Publishing"/>
+                    <LUM_MD_MEDIA_INFO_TAB REGIONS="Independent"/>
+                    <LUM_MD_MEDIA_INFO ASSET_TYPE="PRS" KEYWORDS="FINAL" BRAND="Lumileds"/>
+                    <SECURITY_POLICY_UOIS SEC_POLICY_ID="18"/>
+                </UOIS>
+            </METADATA>
+            <CONTENT>
+                <MASTER FILE="file10"/>
+            </CONTENT>
+        </ASSET>
+        <ASSET>
+            <METADATA>
+                <UOIS AUTHOR="PRINTSUITE" SUBJECT="9239502171PL" MODEL_ID="105" NAME="PRS_H7_12972_EL_12V_9239502171PL.pdf">
+                    <LUM_MD_FILE_INFO ASSET_OWNER="PMM^Aachen"/>
+                    <LUM_MD_DIGI_HUB_INFO WCMS_CONFIDENTIALITY="Not Publishing"/>
+                    <LUM_MD_MEDIA_INFO_TAB REGIONS="Independent"/>
+                    <LUM_MD_MEDIA_INFO ASSET_TYPE="PRS" KEYWORDS="FINAL" BRAND="Lumileds"/>
+                    <SECURITY_POLICY_UOIS SEC_POLICY_ID="18"/>
+                </UOIS>
+            </METADATA>
+            <CONTENT>
+                <MASTER FILE="file11"/>
+            </CONTENT>
+        </ASSET>
+        <ASSET>
+            <METADATA>
+                <UOIS AUTHOR="PRINTSUITE" SUBJECT="9277900011PL" MODEL_ID="105" NAME="PRS_9277900011PL_DRAFT.pdf">
+                    <LUM_MD_FILE_INFO ASSET_OWNER="PMM^Aachen"/>
+                    <LUM_MD_DIGI_HUB_INFO WCMS_CONFIDENTIALITY="Not Publishing"/>
+                    <LUM_MD_MEDIA_INFO_TAB REGIONS="Independent"/>
+                    <LUM_MD_MEDIA_INFO ASSET_TYPE="PRS" KEYWORDS="DRAFT" BRAND="Lumileds"/>
+                    <SECURITY_POLICY_UOIS SEC_POLICY_ID="18"/>
+                </UOIS>
+            </METADATA>
+            <CONTENT>
+                <MASTER FILE="file12"/>
+            </CONTENT>
+        </ASSET>
+        <ASSET>
+            <METADATA>
+                <UOIS AUTHOR="PRINTSUITE" SUBJECT="9277900004PL" MODEL_ID="105" NAME="PRS_9277900004PL_DRAFT.pdf">
+                    <LUM_MD_FILE_INFO ASSET_OWNER="PMM^Aachen"/>
+                    <LUM_MD_DIGI_HUB_INFO WCMS_CONFIDENTIALITY="Not Publishing"/>
+                    <LUM_MD_MEDIA_INFO_TAB REGIONS="Independent"/>
+                    <LUM_MD_MEDIA_INFO ASSET_TYPE="PRS" KEYWORDS="DRAFT" BRAND="Lumileds"/>
+                    <SECURITY_POLICY_UOIS SEC_POLICY_ID="18"/>
+                </UOIS>
+            </METADATA>
+            <CONTENT>
+                <MASTER FILE="file13"/>
+            </CONTENT>
+        </ASSET>
+        <ASSET>
+            <METADATA>
+                <UOIS AUTHOR="PRINTSUITE" SUBJECT="9285412171PL" MODEL_ID="105" NAME="PRS_9285412171PL_DRAFT.pdf">
+                    <LUM_MD_FILE_INFO ASSET_OWNER="PMM^Aachen"/>
+                    <LUM_MD_DIGI_HUB_INFO WCMS_CONFIDENTIALITY="Not Publishing"/>
+                    <LUM_MD_MEDIA_INFO_TAB REGIONS="Independent"/>
+                    <LUM_MD_MEDIA_INFO ASSET_TYPE="PRS" KEYWORDS="DRAFT" BRAND="Lumileds"/>
+                    <SECURITY_POLICY_UOIS SEC_POLICY_ID="18"/>
+                </UOIS>
+            </METADATA>
+            <CONTENT>
+                <MASTER FILE="file14"/>
+            </CONTENT>
+        </ASSET>
+        <ASSET>
+            <METADATA>
+                <UOIS AUTHOR="PRINTSUITE" SUBJECT="9287600423PL" MODEL_ID="105" NAME="PRS_9287600423PL_DRAFT.pdf">
+                    <LUM_MD_FILE_INFO ASSET_OWNER="PMM^Aachen"/>
+                    <LUM_MD_DIGI_HUB_INFO WCMS_CONFIDENTIALITY="Not Publishing"/>
+                    <LUM_MD_MEDIA_INFO_TAB REGIONS="Independent"/>
+                    <LUM_MD_MEDIA_INFO ASSET_TYPE="PRS" KEYWORDS="DRAFT" BRAND="Lumileds"/>
+                    <SECURITY_POLICY_UOIS SEC_POLICY_ID="18"/>
+                </UOIS>
+            </METADATA>
+            <CONTENT>
+                <MASTER FILE="file15"/>
+            </CONTENT>
+        </ASSET>
+        <ASSET>
+            <METADATA>
+                <UOIS AUTHOR="PRINTSUITE" SUBJECT="9285358244PL" MODEL_ID="105" NAME="PRS_9285358244PL_DRAFT.pdf">
+                    <LUM_MD_FILE_INFO ASSET_OWNER="PMM^Aachen"/>
+                    <LUM_MD_DIGI_HUB_INFO WCMS_CONFIDENTIALITY="Not Publishing"/>
+                    <LUM_MD_MEDIA_INFO_TAB REGIONS="Independent"/>
+                    <LUM_MD_MEDIA_INFO ASSET_TYPE="PRS" KEYWORDS="DRAFT" BRAND="Lumileds"/>
+                    <SECURITY_POLICY_UOIS SEC_POLICY_ID="18"/>
+                </UOIS>
+            </METADATA>
+            <CONTENT>
+                <MASTER FILE="file16"/>
+            </CONTENT>
+        </ASSET>
+        <ASSET>
+            <METADATA>
+                <UOIS AUTHOR="PRINTSUITE" SUBJECT="9248407179PL" MODEL_ID="105" NAME="PRS_12.8V_9248407179PL_DRAFT.pdf">
+                    <LUM_MD_FILE_INFO ASSET_OWNER="PMM^Aachen"/>
+                    <LUM_MD_DIGI_HUB_INFO WCMS_CONFIDENTIALITY="Not Publishing"/>
+                    <LUM_MD_MEDIA_INFO_TAB REGIONS="Independent"/>
+                    <LUM_MD_MEDIA_INFO ASSET_TYPE="PRS" KEYWORDS="DRAFT" BRAND="Lumileds"/>
+                    <SECURITY_POLICY_UOIS SEC_POLICY_ID="18"/>
+                </UOIS>
+            </METADATA>
+            <CONTENT>
+                <MASTER FILE="file17"/>
+            </CONTENT>
+        </ASSET>
+        <ASSET>
+            <METADATA>
+                <UOIS AUTHOR="PRINTSUITE" SUBJECT="9230445171PL" MODEL_ID="105" NAME="PRS_9230445171PL_DRAFT.pdf">
+                    <LUM_MD_FILE_INFO ASSET_OWNER="PMM^Aachen"/>
+                    <LUM_MD_DIGI_HUB_INFO WCMS_CONFIDENTIALITY="Not Publishing"/>
+                    <LUM_MD_MEDIA_INFO_TAB REGIONS="Independent"/>
+                    <LUM_MD_MEDIA_INFO ASSET_TYPE="PRS" KEYWORDS="DRAFT" BRAND="Lumileds"/>
+                    <SECURITY_POLICY_UOIS SEC_POLICY_ID="18"/>
+                </UOIS>
+            </METADATA>
+            <CONTENT>
+                <MASTER FILE="file18"/>
+            </CONTENT>
+        </ASSET>
+        <ASSET>
+            <METADATA>
+                <UOIS AUTHOR="PRINTSUITE" SUBJECT="9287600207PL" MODEL_ID="105" NAME="PRS_9287600207PL_DRAFT.pdf">
+                    <LUM_MD_FILE_INFO ASSET_OWNER="PMM^Aachen"/>
+                    <LUM_MD_DIGI_HUB_INFO WCMS_CONFIDENTIALITY="Not Publishing"/>
+                    <LUM_MD_MEDIA_INFO_TAB REGIONS="Independent"/>
+                    <LUM_MD_MEDIA_INFO ASSET_TYPE="PRS" KEYWORDS="DRAFT" BRAND="Lumileds"/>
+                    <SECURITY_POLICY_UOIS SEC_POLICY_ID="18"/>
+                </UOIS>
+            </METADATA>
+            <CONTENT>
+                <MASTER FILE="file19"/>
+            </CONTENT>
+        </ASSET>
+        <ASSET>
+            <METADATA>
+                <UOIS AUTHOR="PRINTSUITE" SUBJECT="9237932171PL" MODEL_ID="105" NAME="PRS_LED PES module_LPM20_6000K_12V_9237932171PL.pdf">
+                    <LUM_MD_FILE_INFO ASSET_OWNER="PMM^Aachen"/>
+                    <LUM_MD_DIGI_HUB_INFO WCMS_CONFIDENTIALITY="Not Publishing"/>
+                    <LUM_MD_MEDIA_INFO_TAB REGIONS="Independent"/>
+                    <LUM_MD_MEDIA_INFO ASSET_TYPE="PRS" KEYWORDS="FINAL" BRAND="Lumileds"/>
+                    <SECURITY_POLICY_UOIS SEC_POLICY_ID="18"/>
+                </UOIS>
+            </METADATA>
+            <CONTENT>
+                <MASTER FILE="file20"/>
+            </CONTENT>
+        </ASSET>
+        <ASSET>
+            <METADATA>
+                <UOIS AUTHOR="PRINTSUITE" SUBJECT="9237935182PL" MODEL_ID="105" NAME="PRS_9237935182PL_DRAFT.pdf">
+                    <LUM_MD_FILE_INFO ASSET_OWNER="PMM^Aachen"/>
+                    <LUM_MD_DIGI_HUB_INFO WCMS_CONFIDENTIALITY="Not Publishing"/>
+                    <LUM_MD_MEDIA_INFO_TAB REGIONS="Independent"/>
+                    <LUM_MD_MEDIA_INFO ASSET_TYPE="PRS" KEYWORDS="DRAFT" BRAND="Lumileds"/>
+                    <SECURITY_POLICY_UOIS SEC_POLICY_ID="18"/>
+                </UOIS>
+            </METADATA>
+            <CONTENT>
+                <MASTER FILE="file21"/>
+            </CONTENT>
+        </ASSET>
+        <ASSET>
+            <METADATA>
+                <UOIS AUTHOR="PRINTSUITE" SUBJECT="9282701197PL" MODEL_ID="105" NAME="PRS_9282701197PL_DRAFT.pdf">
+                    <LUM_MD_FILE_INFO ASSET_OWNER="PMM^Aachen"/>
+                    <LUM_MD_DIGI_HUB_INFO WCMS_CONFIDENTIALITY="Not Publishing"/>
+                    <LUM_MD_MEDIA_INFO_TAB REGIONS="Independent"/>
+                    <LUM_MD_MEDIA_INFO ASSET_TYPE="PRS" KEYWORDS="DRAFT" BRAND="Lumileds"/>
+                    <SECURITY_POLICY_UOIS SEC_POLICY_ID="18"/>
+                </UOIS>
+            </METADATA>
+            <CONTENT>
+                <MASTER FILE="file22"/>
+            </CONTENT>
+        </ASSET>
+        <ASSET>
+            <METADATA>
+                <UOIS AUTHOR="PRINTSUITE" SUBJECT="9282701196PL" MODEL_ID="105" NAME="PRS_9282701196PL_DRAFT.pdf">
+                    <LUM_MD_FILE_INFO ASSET_OWNER="PMM^Aachen"/>
+                    <LUM_MD_DIGI_HUB_INFO WCMS_CONFIDENTIALITY="Not Publishing"/>
+                    <LUM_MD_MEDIA_INFO_TAB REGIONS="Independent"/>
+                    <LUM_MD_MEDIA_INFO ASSET_TYPE="PRS" KEYWORDS="DRAFT" BRAND="Lumileds"/>
+                    <SECURITY_POLICY_UOIS SEC_POLICY_ID="18"/>
+                </UOIS>
+            </METADATA>
+            <CONTENT>
+                <MASTER FILE="file23"/>
+            </CONTENT>
+        </ASSET>
+        <ASSET>
+            <METADATA>
+                <UOIS AUTHOR="PRINTSUITE" SUBJECT="9255030056PL" MODEL_ID="105" NAME="PRS_9255030056PL.pdf">
+                    <LUM_MD_FILE_INFO ASSET_OWNER="PMM^Aachen"/>
+                    <LUM_MD_DIGI_HUB_INFO WCMS_CONFIDENTIALITY="Not Publishing"/>
+                    <LUM_MD_MEDIA_INFO_TAB REGIONS="Independent"/>
+                    <LUM_MD_MEDIA_INFO ASSET_TYPE="PRS" KEYWORDS="FINAL" BRAND="Lumileds"/>
+                    <SECURITY_POLICY_UOIS SEC_POLICY_ID="18"/>
+                </UOIS>
+            </METADATA>
+            <CONTENT>
+                <MASTER FILE="file24"/>
+            </CONTENT>
+        </ASSET>
+        <ASSET>
+            <METADATA>
+                <UOIS AUTHOR="PRINTSUITE" SUBJECT="9246221171PL" MODEL_ID="105" NAME="PRS_9246221171PL_DRAFT.pdf">
+                    <LUM_MD_FILE_INFO ASSET_OWNER="PMM^Aachen"/>
+                    <LUM_MD_DIGI_HUB_INFO WCMS_CONFIDENTIALITY="Not Publishing"/>
+                    <LUM_MD_MEDIA_INFO_TAB REGIONS="Independent"/>
+                    <LUM_MD_MEDIA_INFO ASSET_TYPE="PRS" KEYWORDS="DRAFT" BRAND="Lumileds"/>
+                    <SECURITY_POLICY_UOIS SEC_POLICY_ID="18"/>
+                </UOIS>
+            </METADATA>
+            <CONTENT>
+                <MASTER FILE="file25"/>
+            </CONTENT>
+        </ASSET>
+        <ASSET>
+            <METADATA>
+                <UOIS AUTHOR="PRINTSUITE" SUBJECT="9240274171PL" MODEL_ID="105" NAME="PRS_9240274171PL_DRAFT.pdf">
+                    <LUM_MD_FILE_INFO ASSET_OWNER="PMM^Aachen"/>
+                    <LUM_MD_DIGI_HUB_INFO WCMS_CONFIDENTIALITY="Not Publishing"/>
+                    <LUM_MD_MEDIA_INFO_TAB REGIONS="Independent"/>
+                    <LUM_MD_MEDIA_INFO ASSET_TYPE="PRS" KEYWORDS="DRAFT" BRAND="Lumileds"/>
+                    <SECURITY_POLICY_UOIS SEC_POLICY_ID="18"/>
+                </UOIS>
+            </METADATA>
+            <CONTENT>
+                <MASTER FILE="file26"/>
+            </CONTENT>
+        </ASSET>
+        <ASSET>
+            <METADATA>
+                <UOIS AUTHOR="PRINTSUITE" SUBJECT="9230025171PL" MODEL_ID="105" NAME="PRS_9230025171PL_DRAFT.pdf">
+                    <LUM_MD_FILE_INFO ASSET_OWNER="PMM^Aachen"/>
+                    <LUM_MD_DIGI_HUB_INFO WCMS_CONFIDENTIALITY="Not Publishing"/>
+                    <LUM_MD_MEDIA_INFO_TAB REGIONS="Independent"/>
+                    <LUM_MD_MEDIA_INFO ASSET_TYPE="PRS" KEYWORDS="DRAFT" BRAND="Lumileds"/>
+                    <SECURITY_POLICY_UOIS SEC_POLICY_ID="18"/>
+                </UOIS>
+            </METADATA>
+            <CONTENT>
+                <MASTER FILE="file27"/>
+            </CONTENT>
+        </ASSET>
+        <ASSET>
+            <METADATA>
+                <UOIS AUTHOR="PRINTSUITE" SUBJECT="9285058294PL" MODEL_ID="105" NAME="PRS_Xenon HID Burner_85830_7K_85V_9285058294PL_DRAFT.pdf">
+                    <LUM_MD_FILE_INFO ASSET_OWNER="PMM^Aachen"/>
+                    <LUM_MD_DIGI_HUB_INFO WCMS_CONFIDENTIALITY="Not Publishing"/>
+                    <LUM_MD_MEDIA_INFO_TAB REGIONS="Independent"/>
+                    <LUM_MD_MEDIA_INFO ASSET_TYPE="PRS" KEYWORDS="DRAFT" BRAND="Lumileds"/>
+                    <SECURITY_POLICY_UOIS SEC_POLICY_ID="18"/>
+                </UOIS>
+            </METADATA>
+            <CONTENT>
+                <MASTER FILE="file28"/>
+            </CONTENT>
+        </ASSET>
+        <ASSET>
+            <METADATA>
+                <UOIS AUTHOR="PRINTSUITE" SUBJECT="9285999095PL" MODEL_ID="105" NAME="PRS_TEST CHRIS_TEST CHRIS_TEST CHRIS_TEST CHRIS_9285999095PL.pdf">
+                    <LUM_MD_FILE_INFO ASSET_OWNER="PMM^Aachen"/>
+                    <LUM_MD_DIGI_HUB_INFO WCMS_CONFIDENTIALITY="Not Publishing"/>
+                    <LUM_MD_MEDIA_INFO_TAB REGIONS="Independent"/>
+                    <LUM_MD_MEDIA_INFO ASSET_TYPE="PRS" KEYWORDS="FINAL" BRAND="Lumileds"/>
+                    <SECURITY_POLICY_UOIS SEC_POLICY_ID="18"/>
+                </UOIS>
+            </METADATA>
+            <CONTENT>
+                <MASTER FILE="file29"/>
+            </CONTENT>
+        </ASSET>
+        <ASSET>
+            <METADATA>
+                <UOIS AUTHOR="PRINTSUITE" SUBJECT="9230445171PL" MODEL_ID="105" NAME="PRS_H10fit_12082_12V_9230445171PL.pdf">
+                    <LUM_MD_FILE_INFO ASSET_OWNER="PMM^Aachen"/>
+                    <LUM_MD_DIGI_HUB_INFO WCMS_CONFIDENTIALITY="Not Publishing"/>
+                    <LUM_MD_MEDIA_INFO_TAB REGIONS="Independent"/>
+                    <LUM_MD_MEDIA_INFO ASSET_TYPE="PRS" KEYWORDS="FINAL" BRAND="Lumileds"/>
+                    <SECURITY_POLICY_UOIS SEC_POLICY_ID="18"/>
+                </UOIS>
+            </METADATA>
+            <CONTENT>
+                <MASTER FILE="file31"/>
+            </CONTENT>
+        </ASSET>
+        <ASSET>
+            <METADATA>
+                <UOIS AUTHOR="PRINTSUITE" SUBJECT="9237995301PL" MODEL_ID="105" NAME="PRS_LED Reading light_12957_6000K_12V_9237995301PL.pdf">
+                    <LUM_MD_FILE_INFO ASSET_OWNER="PMM^Aachen"/>
+                    <LUM_MD_DIGI_HUB_INFO WCMS_CONFIDENTIALITY="Not Publishing"/>
+                    <LUM_MD_MEDIA_INFO_TAB REGIONS="Independent"/>
+                    <LUM_MD_MEDIA_INFO ASSET_TYPE="PRS" KEYWORDS="FINAL" BRAND="Lumileds"/>
+                    <SECURITY_POLICY_UOIS SEC_POLICY_ID="18"/>
+                </UOIS>
+            </METADATA>
+            <CONTENT>
+                <MASTER FILE="file32"/>
+            </CONTENT>
+        </ASSET>
+        <ASSET>
+            <METADATA>
+                <UOIS AUTHOR="PRINTSUITE" SUBJECT="9237935182PL" MODEL_ID="105" NAME="PRS_T-5 LED_921_ULW_12V_9237935182PL.pdf">
+                    <LUM_MD_FILE_INFO ASSET_OWNER="PMM^Aachen"/>
+                    <LUM_MD_DIGI_HUB_INFO WCMS_CONFIDENTIALITY="Not Publishing"/>
+                    <LUM_MD_MEDIA_INFO_TAB REGIONS="Independent"/>
+                    <LUM_MD_MEDIA_INFO ASSET_TYPE="PRS" KEYWORDS="FINAL" BRAND="Lumileds"/>
+                    <SECURITY_POLICY_UOIS SEC_POLICY_ID="18"/>
+                </UOIS>
+            </METADATA>
+            <CONTENT>
+                <MASTER FILE="file33"/>
+            </CONTENT>
+        </ASSET>
+        <ASSET>
+            <METADATA>
+                <UOIS AUTHOR="PRINTSUITE" SUBJECT="9282701197PL" MODEL_ID="105" NAME="PRS_LED FOG_11366_ULW_12V_9282701197PL.pdf">
+                    <LUM_MD_FILE_INFO ASSET_OWNER="PMM^Aachen"/>
+                    <LUM_MD_DIGI_HUB_INFO WCMS_CONFIDENTIALITY="Not Publishing"/>
+                    <LUM_MD_MEDIA_INFO_TAB REGIONS="Independent"/>
+                    <LUM_MD_MEDIA_INFO ASSET_TYPE="PRS" KEYWORDS="FINAL" BRAND="Lumileds"/>
+                    <SECURITY_POLICY_UOIS SEC_POLICY_ID="18"/>
+                </UOIS>
+            </METADATA>
+            <CONTENT>
+                <MASTER FILE="file34"/>
+            </CONTENT>
+        </ASSET>
+        <ASSET>
+            <METADATA>
+                <UOIS AUTHOR="PRINTSUITE" SUBJECT="9282701196PL" MODEL_ID="105" NAME="PRS_LED [≈H7]_11972_ULW_12V_9282701196PL.pdf">
+                    <LUM_MD_FILE_INFO ASSET_OWNER="PMM^Aachen"/>
+                    <LUM_MD_DIGI_HUB_INFO WCMS_CONFIDENTIALITY="Not Publishing"/>
+                    <LUM_MD_MEDIA_INFO_TAB REGIONS="Independent"/>
+                    <LUM_MD_MEDIA_INFO ASSET_TYPE="PRS" KEYWORDS="FINAL" BRAND="Lumileds"/>
+                    <SECURITY_POLICY_UOIS SEC_POLICY_ID="18"/>
+                </UOIS>
+            </METADATA>
+            <CONTENT>
+                <MASTER FILE="file35"/>
+            </CONTENT>
+        </ASSET>
+        <ASSET>
+            <METADATA>
+                <UOIS AUTHOR="PRINTSUITE" SUBJECT="9246221171PL" MODEL_ID="105" NAME="PRS_HiPer_12084_13.5V_9246221171PL.pdf">
+                    <LUM_MD_FILE_INFO ASSET_OWNER="PMM^Aachen"/>
+                    <LUM_MD_DIGI_HUB_INFO WCMS_CONFIDENTIALITY="Not Publishing"/>
+                    <LUM_MD_MEDIA_INFO_TAB REGIONS="Independent"/>
+                    <LUM_MD_MEDIA_INFO ASSET_TYPE="PRS" KEYWORDS="FINAL" BRAND="Lumileds"/>
+                    <SECURITY_POLICY_UOIS SEC_POLICY_ID="18"/>
+                </UOIS>
+            </METADATA>
+            <CONTENT>
+                <MASTER FILE="file36"/>
+            </CONTENT>
+        </ASSET>
+        <ASSET>
+            <METADATA>
+                <UOIS AUTHOR="PRINTSUITE" SUBJECT="9226737205PL" MODEL_ID="105" NAME="PRS_P21W_13498_24V_9226737205PL.pdf">
+                    <LUM_MD_FILE_INFO ASSET_OWNER="PMM^Aachen"/>
+                    <LUM_MD_DIGI_HUB_INFO WCMS_CONFIDENTIALITY="Not Publishing"/>
+                    <LUM_MD_MEDIA_INFO_TAB REGIONS="Independent"/>
+                    <LUM_MD_MEDIA_INFO ASSET_TYPE="PRS" KEYWORDS="FINAL" BRAND="Lumileds"/>
+                    <SECURITY_POLICY_UOIS SEC_POLICY_ID="18"/>
+                </UOIS>
+            </METADATA>
+            <CONTENT>
+                <MASTER FILE="file37"/>
+            </CONTENT>
+        </ASSET>
+        <ASSET>
+            <METADATA>
+                <UOIS AUTHOR="PRINTSUITE" SUBJECT="9235098179PL" MODEL_ID="105" NAME="PRS_HB3_9005_WHV_12.8V_9235098179PL.pdf">
+                    <LUM_MD_FILE_INFO ASSET_OWNER="PMM^Aachen"/>
+                    <LUM_MD_DIGI_HUB_INFO WCMS_CONFIDENTIALITY="Not Publishing"/>
+                    <LUM_MD_MEDIA_INFO_TAB REGIONS="Independent"/>
+                    <LUM_MD_MEDIA_INFO ASSET_TYPE="PRS" KEYWORDS="FINAL" BRAND="Lumileds"/>
+                    <SECURITY_POLICY_UOIS SEC_POLICY_ID="18"/>
+                </UOIS>
+            </METADATA>
+            <CONTENT>
+                <MASTER FILE="file38"/>
+            </CONTENT>
+        </ASSET>
+        <ASSET>
+            <METADATA>
+                <UOIS AUTHOR="PRINTSUITE" SUBJECT="9285999093PL" MODEL_ID="105" NAME="PRS_TC600i_TC60I_not applic._9285999093PL_DRAFT.pdf">
+                    <LUM_MD_FILE_INFO ASSET_OWNER="PMM^Aachen"/>
+                    <LUM_MD_DIGI_HUB_INFO WCMS_CONFIDENTIALITY="Not Publishing"/>
+                    <LUM_MD_MEDIA_INFO_TAB REGIONS="Independent"/>
+                    <LUM_MD_MEDIA_INFO ASSET_TYPE="PRS" KEYWORDS="DRAFT" BRAND="Lumileds"/>
+                    <SECURITY_POLICY_UOIS SEC_POLICY_ID="18"/>
+                </UOIS>
+            </METADATA>
+            <CONTENT>
+                <MASTER FILE="file39"/>
+            </CONTENT>
+        </ASSET>
+        <ASSET>
+            <METADATA>
+                <UOIS AUTHOR="PRINTSUITE" SUBJECT="9285999080PL" MODEL_ID="105" NAME="PRS_ADR800S_ADR80_S_not applic._9285999080PL.pdf">
+                    <LUM_MD_FILE_INFO ASSET_OWNER="PMM^Aachen"/>
+                    <LUM_MD_DIGI_HUB_INFO WCMS_CONFIDENTIALITY="Not Publishing"/>
+                    <LUM_MD_MEDIA_INFO_TAB REGIONS="Independent"/>
+                    <LUM_MD_MEDIA_INFO ASSET_TYPE="PRS" KEYWORDS="FINAL" BRAND="Lumileds"/>
+                    <SECURITY_POLICY_UOIS SEC_POLICY_ID="18"/>
+                </UOIS>
+            </METADATA>
+            <CONTENT>
+                <MASTER FILE="file40"/>
+            </CONTENT>
+        </ASSET>
+        <ASSET>
+            <METADATA>
+                <UOIS AUTHOR="PRINTSUITE" SUBJECT="9285999002PL" MODEL_ID="105" NAME="PRS_FILT 201 ACA_50988_GP_12V_9285999002PL.pdf">
+                    <LUM_MD_FILE_INFO ASSET_OWNER="PMM^Aachen"/>
+                    <LUM_MD_DIGI_HUB_INFO WCMS_CONFIDENTIALITY="Not Publishing"/>
+                    <LUM_MD_MEDIA_INFO_TAB REGIONS="Independent"/>
+                    <LUM_MD_MEDIA_INFO ASSET_TYPE="PRS" KEYWORDS="FINAL" BRAND="Lumileds"/>
+                    <SECURITY_POLICY_UOIS SEC_POLICY_ID="18"/>
+                </UOIS>
+            </METADATA>
+            <CONTENT>
+                <MASTER FILE="file41"/>
+            </CONTENT>
+        </ASSET>
+        <ASSET>
+            <METADATA>
+                <UOIS AUTHOR="PRINTSUITE" SUBJECT="9277900011PL" MODEL_ID="105" NAME="PRS_LR5B_21312_13.5V_9277900011PL.pdf">
+                    <LUM_MD_FILE_INFO ASSET_OWNER="PMM^Aachen"/>
+                    <LUM_MD_DIGI_HUB_INFO WCMS_CONFIDENTIALITY="Not Publishing"/>
+                    <LUM_MD_MEDIA_INFO_TAB REGIONS="Independent"/>
+                    <LUM_MD_MEDIA_INFO ASSET_TYPE="PRS" KEYWORDS="FINAL" BRAND="Lumileds"/>
+                    <SECURITY_POLICY_UOIS SEC_POLICY_ID="18"/>
+                </UOIS>
+            </METADATA>
+            <CONTENT>
+                <MASTER FILE="file42"/>
+            </CONTENT>
+        </ASSET>
+        <ASSET>
+            <METADATA>
+                <UOIS AUTHOR="PRINTSUITE" SUBJECT="9277900004PL" MODEL_ID="105" NAME="PRS_LR3B_21302_13.5V_9277900004PL.pdf">
+                    <LUM_MD_FILE_INFO ASSET_OWNER="PMM^Aachen"/>
+                    <LUM_MD_DIGI_HUB_INFO WCMS_CONFIDENTIALITY="Not Publishing"/>
+                    <LUM_MD_MEDIA_INFO_TAB REGIONS="Independent"/>
+                    <LUM_MD_MEDIA_INFO ASSET_TYPE="PRS" KEYWORDS="FINAL" BRAND="Lumileds"/>
+                    <SECURITY_POLICY_UOIS SEC_POLICY_ID="18"/>
+                </UOIS>
+            </METADATA>
+            <CONTENT>
+                <MASTER FILE="file43"/>
+            </CONTENT>
+        </ASSET>
+        <ASSET>
+            <METADATA>
+                <UOIS AUTHOR="PRINTSUITE" SUBJECT="9285412171PL" MODEL_ID="105" NAME="PRS_D5S_BUXV+_12V_9285412171PL.pdf">
+                    <LUM_MD_FILE_INFO ASSET_OWNER="PMM^Aachen"/>
+                    <LUM_MD_DIGI_HUB_INFO WCMS_CONFIDENTIALITY="Not Publishing"/>
+                    <LUM_MD_MEDIA_INFO_TAB REGIONS="Independent"/>
+                    <LUM_MD_MEDIA_INFO ASSET_TYPE="PRS" KEYWORDS="FINAL" BRAND="Lumileds"/>
+                    <SECURITY_POLICY_UOIS SEC_POLICY_ID="18"/>
+                </UOIS>
+            </METADATA>
+            <CONTENT>
+                <MASTER FILE="file44"/>
+            </CONTENT>
+        </ASSET>
+        <ASSET>
+            <METADATA>
+                <UOIS AUTHOR="PRINTSUITE" SUBJECT="9237971502PL" MODEL_ID="105" NAME="PRS_RCH21S LED Lamp_LPL61_220V_9237971502PL.pdf">
+                    <LUM_MD_FILE_INFO ASSET_OWNER="PMM^Aachen"/>
+                    <LUM_MD_DIGI_HUB_INFO WCMS_CONFIDENTIALITY="Not Publishing"/>
+                    <LUM_MD_MEDIA_INFO_TAB REGIONS="Independent"/>
+                    <LUM_MD_MEDIA_INFO ASSET_TYPE="PRS" KEYWORDS="FINAL" BRAND="Lumileds"/>
+                    <SECURITY_POLICY_UOIS SEC_POLICY_ID="18"/>
+                </UOIS>
+            </METADATA>
+            <CONTENT>
+                <MASTER FILE="file45"/>
+            </CONTENT>
+        </ASSET>
+    </ASSETS>
+</TEAMS_ASSET_FILE>

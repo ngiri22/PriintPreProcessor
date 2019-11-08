@@ -19,7 +19,7 @@ public class ProcessorConstants {
 	public static final String DRAFT_BATCH_EXEC = Configurations.getInstance().getProperty("draft.file.importer");
 	public static final String FINAL_PIS_BATCH_EXEC = Configurations.getInstance().getProperty("final.pis.file.importer");
 	public static final String FINAL_PRS_BATCH_EXEC = Configurations.getInstance().getProperty("final.prs.file.importer");
-	public static final String FINAL__CPIS_BATCH_EXEC = Configurations.getInstance().getProperty("final.cpis.file.importer");
+	public static final String FINAL_CPIS_BATCH_EXEC = Configurations.getInstance().getProperty("final.cpis.file.importer");
 	
 	public static final CharSequence DRAFT_PATTERN = Configurations.getInstance().getProperty("draft.pattern");
 	public static final CharSequence FINAL_PIS_PATTERN = Configurations.getInstance().getProperty("final.pis.pattern");

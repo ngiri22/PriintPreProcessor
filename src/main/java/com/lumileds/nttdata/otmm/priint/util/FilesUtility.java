@@ -11,6 +11,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
+import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
 import org.dom4j.DocumentException;
@@ -67,8 +68,9 @@ public class FilesUtility {
 		File[] xmlFileList = directoryName.listFiles(fileNameFilter);
 
 
-		//Sort as per last modified time
-		Arrays.sort(xmlFileList, Comparator.comparingLong(File::lastModified));
+		//Sort as per last modified time in descending order
+		Arrays.sort(xmlFileList, Comparator.comparingLong(File::lastModified).reversed());	
+		
 
 		return xmlFileList;
 
@@ -137,6 +139,7 @@ public class FilesUtility {
 		try {
 			//Check if sourceFolder is a directory or file
 			//If sourceFolder is file; then copy the file directly to new location
+			
 			if (sourceFolder.isDirectory())
 			{
 				//Verify if destinationFolder is already present; If not then create it
@@ -224,11 +227,13 @@ public class FilesUtility {
 	//	}
 
 
-	public void moveFiles(List<AssetMetadata> totalAssetsList) {
+	public void moveFiles(Set<AssetMetadata> totalAssetsSet) {
 
 		try {
 			
-			for (AssetMetadata assetMetadata : totalAssetsList) {
+			for (AssetMetadata assetMetadata : totalAssetsSet) {
+				
+				logger.debug("Moving File : {} \\ {}", assetMetadata.getFolderName(), assetMetadata.getName());
 
 				Files.move(
 						Paths.get(
@@ -251,11 +256,49 @@ public class FilesUtility {
 		}catch (IOException ioEx) {
 
 			logger.error("IOException while moving files: {}", ioEx);
+			
+			System.exit(1);
 
 		}
 
 
 
+	}
+
+
+	public void deleteFolders(Set<String> folderSet) {
+		
+		for(String folderName : folderSet ) {
+			
+			File file = new File(
+					ProcessorConstants.BASE_FOLDER +
+					ProcessorConstants.BACK_SLASH +
+					folderName);
+			
+			deleteDir(file);
+			
+		}
+		
+	}
+
+
+	private void deleteDir(File file) {
+
+			File[] contents = file.listFiles();
+		    
+			if (contents != null) {
+		        for (File f : contents) {
+		            if (! Files.isSymbolicLink(f.toPath())) {
+		                deleteDir(f);
+		            }
+		        }
+		    }
+			
+			logger.debug("Deleting file: {} ", file.getName());
+			
+		    file.delete();
+			
+		
 	}
 
 }

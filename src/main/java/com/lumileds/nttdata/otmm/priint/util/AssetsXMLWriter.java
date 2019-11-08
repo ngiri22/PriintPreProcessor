@@ -9,6 +9,7 @@ import java.io.OutputStreamWriter;
 import java.io.PrintWriter;
 import java.io.UnsupportedEncodingException;
 import java.util.List;
+import java.util.Set;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -32,7 +33,7 @@ public class AssetsXMLWriter {
 
 	private final Logger logger = LoggerFactory.getLogger(FilesUtility.class);
 
-	public void generateXML(List<AssetMetadata> assetMetadataList, 
+	public void generateXML(Set<AssetMetadata> assetMetadataList, 
 			CharSequence folderPattern) {
 
 		String metadataXML ;
@@ -47,19 +48,20 @@ public class AssetsXMLWriter {
 					ProcessorConstants.XML_EXTENSION ;
 
 		}
-		else if (folderPattern.toString().contains(ProcessorConstants.FINAL_PIS_PATTERN)) {
+		else if (folderPattern.toString().contains(ProcessorConstants.FINAL_CPIS_PATTERN)) {
 
-			metadataXML = ProcessorConstants.FINAL_PIS_FOLDER + 
+			metadataXML = ProcessorConstants.FINAL_CPIS_FOLDER + 
 					ProcessorConstants.BACK_SLASH +
 					ProcessorConstants.OUTPUT_XML_FILE +
 					ProcessorConstants.UNDER_SCORE +
 					System.currentTimeMillis() + 
 					ProcessorConstants.XML_EXTENSION ;
+			
 
 		}
 		else if (folderPattern.toString().contains(ProcessorConstants.FINAL_PRS_PATTERN)) {
 
-			metadataXML = ProcessorConstants.FINAL_PIS_FOLDER + 
+			metadataXML = ProcessorConstants.FINAL_PRS_FOLDER + 
 					ProcessorConstants.BACK_SLASH +
 					ProcessorConstants.OUTPUT_XML_FILE +
 					ProcessorConstants.UNDER_SCORE +
@@ -69,12 +71,12 @@ public class AssetsXMLWriter {
 		}
 		else  {
 
-			metadataXML = ProcessorConstants.FINAL_CPIS_FOLDER + 
+			metadataXML = ProcessorConstants.FINAL_PIS_FOLDER + 
 					ProcessorConstants.BACK_SLASH +
 					ProcessorConstants.OUTPUT_XML_FILE +
 					ProcessorConstants.UNDER_SCORE +
 					System.currentTimeMillis() + 
-					ProcessorConstants.XML_EXTENSION ;
+					ProcessorConstants.XML_EXTENSION ;		
 
 		}
 

@@ -1,0 +1,1 @@
+java -cp D:\eclipse-workspace\PriintPreProcessor\HOTFOLDER\conf;D:\eclipse-workspace\PriintPreProcessor\HOTFOLDER\lib\PriintPreProcessor.jar -Dfile.encoding="UTF-8" com.lumileds.nttdata.otmm.priint.PriintPreProcessor 2> D:\eclipse-workspace\PriintPreProcessor\HOTFOLDER\logs\priint_pre_processor_console.log

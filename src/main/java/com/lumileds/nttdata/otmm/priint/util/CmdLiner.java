@@ -13,18 +13,10 @@ public class CmdLiner {
 
 	private static final Logger logger = LoggerFactory.getLogger(CmdLiner.class);
 
-	public static void runBulkImport(boolean isFinal) {
+	public static void runBulkImport(String batchFile) {
 
-		logger.debug("Started batch file execution");
+		logger.debug("Executing batch file: {}", batchFile);
 
-		String batchFile = ProcessorConstants.DRAFT_BATCH_EXEC;
-		
-		if (isFinal) {
-			
-			batchFile = ProcessorConstants.FINAL_PIS_BATCH_EXEC ;
-			
-		}
-		
 		try {
 
 			ProcessBuilder builder = new ProcessBuilder(batchFile);

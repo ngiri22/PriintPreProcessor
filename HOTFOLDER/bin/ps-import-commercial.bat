@@ -1,1 +1,0 @@
-D:\OpenText\OTMM\MediaManagement\bin\bulkimport.bat -user tsuper -password OT@dmin321 -mode xml -dir D:\OpenText\OTMM\priint\Commercial -folder 4df56ecc3afdb6566d51a90a8b1f097234d91447 -nodelete >> D:\OpenText\OTMM\HotFolder\logs\ps-commercial-asset-import.log

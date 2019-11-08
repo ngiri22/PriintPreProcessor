@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><!DOCTYPE TEAMS_ASSET_FILE [<!ENTITY file1 SYSTEM "20191108161909\PRS_D3S_42403_XG_42V_9285358244PL_DRAFT.pdf" NDATA application_pdf><!ENTITY file2 SYSTEM "20191108161909\PRS_H4_12342_PR_12V_9240274171PL.pdf" NDATA application_pdf><!ENTITY file3 SYSTEM "20191108161909\PRS_HB3fit_12359_RA_12V_9230025171PL.pdf" NDATA application_pdf><!ENTITY file4 SYSTEM "20191108161909\PRS_LR3B_21302_13.5V_9277900004PL_DRAFT.pdf" NDATA application_pdf><!ENTITY file5 SYSTEM "20191108161909\PRS_Xenon HID Burner_85830_7K_85V_9285058294PL.pdf" NDATA application_pdf><!ENTITY file6 SYSTEM "20191108161909\PRS_LED Reading light_12957_6000K_12V_9237995301PL_DRAFT.pdf" NDATA application_pdf>]>
+<TEAMS_ASSET_FILE>
+    <ASSETS>
+        <ASSET>
+            <METADATA>
+                <UOIS AUTHOR="PRINTSUITE" SUBJECT="9285358244PL" MODEL_ID="105" NAME="PRS_D3S_42403_XG_42V_9285358244PL_DRAFT.pdf">
+                    <LUM_MD_FILE_INFO ASSET_OWNER="PMM^Aachen"/>
+                    <LUM_MD_DIGI_HUB_INFO WCMS_CONFIDENTIALITY="Not Publishing"/>
+                    <LUM_MD_MEDIA_INFO_TAB REGIONS="Independent"/>
+                    <LUM_MD_MEDIA_INFO ASSET_TYPE="PRS" KEYWORDS="DRAFT" BRAND="Lumileds"/>
+                    <SECURITY_POLICY_UOIS SEC_POLICY_ID="18"/>
+                </UOIS>
+            </METADATA>
+            <CONTENT>
+                <MASTER FILE="file1"/>
+            </CONTENT>
+        </ASSET>
+        <ASSET>
+            <METADATA>
+                <UOIS AUTHOR="PRINTSUITE" SUBJECT="9240274171PL" MODEL_ID="105" NAME="PRS_H4_12342_PR_12V_9240274171PL.pdf">
+                    <LUM_MD_FILE_INFO ASSET_OWNER="PMM^Aachen"/>
+                    <LUM_MD_DIGI_HUB_INFO WCMS_CONFIDENTIALITY="Not Publishing"/>
+                    <LUM_MD_MEDIA_INFO_TAB REGIONS="Independent"/>
+                    <LUM_MD_MEDIA_INFO ASSET_TYPE="PRS" KEYWORDS="FINAL" BRAND="Lumileds"/>
+                    <SECURITY_POLICY_UOIS SEC_POLICY_ID="18"/>
+                </UOIS>
+            </METADATA>
+            <CONTENT>
+                <MASTER FILE="file2"/>
+            </CONTENT>
+        </ASSET>
+        <ASSET>
+            <METADATA>
+                <UOIS AUTHOR="PRINTSUITE" SUBJECT="9230025171PL" MODEL_ID="105" NAME="PRS_HB3fit_12359_RA_12V_9230025171PL.pdf">
+                    <LUM_MD_FILE_INFO ASSET_OWNER="PMM^Aachen"/>
+                    <LUM_MD_DIGI_HUB_INFO WCMS_CONFIDENTIALITY="Not Publishing"/>
+                    <LUM_MD_MEDIA_INFO_TAB REGIONS="Independent"/>
+                    <LUM_MD_MEDIA_INFO ASSET_TYPE="PRS" KEYWORDS="FINAL" BRAND="Lumileds"/>
+                    <SECURITY_POLICY_UOIS SEC_POLICY_ID="18"/>
+                </UOIS>
+            </METADATA>
+            <CONTENT>
+                <MASTER FILE="file3"/>
+            </CONTENT>
+        </ASSET>
+        <ASSET>
+            <METADATA>
+                <UOIS AUTHOR="PRINTSUITE" SUBJECT="9277900004PL" MODEL_ID="105" NAME="PRS_LR3B_21302_13.5V_9277900004PL_DRAFT.pdf">
+                    <LUM_MD_FILE_INFO ASSET_OWNER="PMM^Aachen"/>
+                    <LUM_MD_DIGI_HUB_INFO WCMS_CONFIDENTIALITY="Not Publishing"/>
+                    <LUM_MD_MEDIA_INFO_TAB REGIONS="Independent"/>
+                    <LUM_MD_MEDIA_INFO ASSET_TYPE="PRS" KEYWORDS="DRAFT" BRAND="Lumileds"/>
+                    <SECURITY_POLICY_UOIS SEC_POLICY_ID="18"/>
+                </UOIS>
+            </METADATA>
+            <CONTENT>
+                <MASTER FILE="file4"/>
+            </CONTENT>
+        </ASSET>
+        <ASSET>
+            <METADATA>
+                <UOIS AUTHOR="PRINTSUITE" SUBJECT="9285058294PL" MODEL_ID="105" NAME="PRS_Xenon HID Burner_85830_7K_85V_9285058294PL.pdf">
+                    <LUM_MD_FILE_INFO ASSET_OWNER="PMM^Aachen"/>
+                    <LUM_MD_DIGI_HUB_INFO WCMS_CONFIDENTIALITY="Not Publishing"/>
+                    <LUM_MD_MEDIA_INFO_TAB REGIONS="Independent"/>
+                    <LUM_MD_MEDIA_INFO ASSET_TYPE="PRS" KEYWORDS="FINAL" BRAND="Lumileds"/>
+                    <SECURITY_POLICY_UOIS SEC_POLICY_ID="18"/>
+                </UOIS>
+            </METADATA>
+            <CONTENT>
+                <MASTER FILE="file5"/>
+            </CONTENT>
+        </ASSET>
+        <ASSET>
+            <METADATA>
+                <UOIS AUTHOR="PRINTSUITE" SUBJECT="9237995301PL" MODEL_ID="105" NAME="PRS_LED Reading light_12957_6000K_12V_9237995301PL_DRAFT.pdf">
+                    <LUM_MD_FILE_INFO ASSET_OWNER="PMM^Aachen"/>
+                    <LUM_MD_DIGI_HUB_INFO WCMS_CONFIDENTIALITY="Not Publishing"/>
+                    <LUM_MD_MEDIA_INFO_TAB REGIONS="Independent"/>
+                    <LUM_MD_MEDIA_INFO ASSET_TYPE="PRS" KEYWORDS="DRAFT" BRAND="Lumileds"/>
+                    <SECURITY_POLICY_UOIS SEC_POLICY_ID="18"/>
+                </UOIS>
+            </METADATA>
+            <CONTENT>
+                <MASTER FILE="file6"/>
+            </CONTENT>
+        </ASSET>
+    </ASSETS>
+</TEAMS_ASSET_FILE>
