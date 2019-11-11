@@ -3,6 +3,8 @@
 
 # Project specific
 HOTFOLDER/
+ARCHIVE/
+priint/
 
 # Log file
 *.log
