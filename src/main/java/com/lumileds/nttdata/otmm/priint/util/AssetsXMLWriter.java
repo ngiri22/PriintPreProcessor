@@ -91,9 +91,11 @@ public class AssetsXMLWriter {
 								ProcessorConstants.CHARSET));
 
 				//write out the doctype or include xml prolog if so desired
-				writer.println("<?xml version=\"1.0\" encoding=\"" + ProcessorConstants.CHARSET + "\" ?>");
+				writer.println("<?xml version=\"1.0\" encoding=\"" + 
+				ProcessorConstants.CHARSET + "\" ?>");
 
-				writer.println("<!DOCTYPE TEAMS_ASSET_FILE [");
+				writer.println("<!DOCTYPE TEAMS_ASSET_FILE PUBLIC \"-//TEAMS//DTD "
+						+ "asset and link file//EN\" \"Tasset.dtd\" [");
 
 				int j = 0 ;
 				

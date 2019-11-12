@@ -9,6 +9,7 @@ import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
+import java.util.concurrent.TimeUnit;
 
 import org.dom4j.DocumentException;
 import org.slf4j.Logger;
@@ -33,6 +34,18 @@ public class PriintPreProcessor {
 
 		processAssets();
 
+		//Sleep for 3 minutes so that the Bulk Import xml
+		//file becomes old enough to be picked up.
+		
+		try {
+			
+			TimeUnit.MINUTES.sleep(3);
+		
+		} catch (InterruptedException intEx) {
+			
+			logger.error("Interrupted Exception: {}", intEx);
+		}
+		
 		//Call BulkImportUtlity for Drafts
 		CmdLiner.runBulkImport(ProcessorConstants.DRAFT_BATCH_EXEC);
 

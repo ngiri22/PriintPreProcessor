@@ -5,6 +5,7 @@
 HOTFOLDER/
 ARCHIVE/
 priint/
+bin/
 
 # Log file
 *.log
