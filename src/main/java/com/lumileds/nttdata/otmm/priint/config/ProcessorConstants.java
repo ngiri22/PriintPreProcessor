@@ -70,7 +70,39 @@ public class ProcessorConstants {
 	public static final String XML_FILE_ATTRIBUTE = "FILE";
 	
 	public static final long TIME_DELAY_IN_MICROSECONDS = 300000; //5 minutes
-	public static final String OUTPUT_XML_FILE = "OTMM_BATCH";	
+	public static final String OUTPUT_XML_FILE = "OTMM_BATCH";
+	
+	
+	public static final String SESSIONS_URL = "sessions";
+	public static final String OTMM_API_URL = Configurations.getInstance().getProperty("otmm.api.url");
+	public static final String FRONT_SLASH = "/";	
+	public static final String ASSETS_URL = "assets";
+	public static final String STATE_URL = "state";
+	public static final String PASSWORD = "password";
+	public static final String USERNAME = "username";
+	public static final String EQUALS = "=";
+	public static final String OTMM_USER_NAME = Configurations.getInstance().getProperty("otmm.api.username");
+	public static final String OTMM_PASSWORD = Configurations.getInstance().getProperty("otmm.api.password");
+	public static final String AMPERSAND = "&";	
+	
+	
+	public static final String POST = "POST";
+	public static final String CONTENT_TYPE = "Content-Type";
+	public static final String FORM_URL_ENCODE = "application/x-www-form-urlencoded";
+	public static final int CONNECT_TIMEOUT = 30000;
+	public static final int READ_TIMEOUT = 30000;
+	//public static final String OTMM_API_VERSION = "v4";
+
+	public static final String CONTENT_LENGTH = "Content-Length";
+	public static final String MESSAGE_DIGEST = "message_digest";
+	public static final String DELETE_FLAG = "DELETE";
+	public static final String PURGE_FLAG = "PURGE";
+	public static final String DELETE_ACTION_URL_PARAMS = "action=delete&"
+						+ "asset_state_options={ \"asset_state_options_param\":"
+						+ " { \"asset_state_options\":"
+						+ " { \"apply_to_all_versions\": false"
+						+ " } } }";;
+	
 	
 		
 }
