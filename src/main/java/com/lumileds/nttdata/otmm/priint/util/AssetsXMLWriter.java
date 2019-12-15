@@ -42,6 +42,8 @@ public class AssetsXMLWriter {
 
 			metadataXML = ProcessorConstants.DRAFT_FOLDER + 
 					ProcessorConstants.BACK_SLASH +
+					ProcessorConstants.ORIGINAL +
+					ProcessorConstants.BACK_SLASH +
 					ProcessorConstants.OUTPUT_XML_FILE +
 					ProcessorConstants.UNDER_SCORE +
 					System.currentTimeMillis() + 
@@ -51,6 +53,8 @@ public class AssetsXMLWriter {
 		else if (folderPattern.toString().contains(ProcessorConstants.FINAL_CPIS_PATTERN)) {
 
 			metadataXML = ProcessorConstants.FINAL_CPIS_FOLDER + 
+					ProcessorConstants.BACK_SLASH +
+					ProcessorConstants.ORIGINAL +
 					ProcessorConstants.BACK_SLASH +
 					ProcessorConstants.OUTPUT_XML_FILE +
 					ProcessorConstants.UNDER_SCORE +
@@ -63,6 +67,8 @@ public class AssetsXMLWriter {
 
 			metadataXML = ProcessorConstants.FINAL_PRS_FOLDER + 
 					ProcessorConstants.BACK_SLASH +
+					ProcessorConstants.ORIGINAL +
+					ProcessorConstants.BACK_SLASH +
 					ProcessorConstants.OUTPUT_XML_FILE +
 					ProcessorConstants.UNDER_SCORE +
 					System.currentTimeMillis() + 
@@ -72,6 +78,8 @@ public class AssetsXMLWriter {
 		else  {
 
 			metadataXML = ProcessorConstants.FINAL_PIS_FOLDER + 
+					ProcessorConstants.BACK_SLASH +
+					ProcessorConstants.ORIGINAL +
 					ProcessorConstants.BACK_SLASH +
 					ProcessorConstants.OUTPUT_XML_FILE +
 					ProcessorConstants.UNDER_SCORE +
@@ -88,11 +96,11 @@ public class AssetsXMLWriter {
 
 				PrintWriter writer = new PrintWriter(
 						new OutputStreamWriter(bos, 
-								ProcessorConstants.CHARSET));
+								ProcessorConstants.UTF_8));
 
 				//write out the doctype or include xml prolog if so desired
 				writer.println("<?xml version=\"1.0\" encoding=\"" + 
-				ProcessorConstants.CHARSET + "\" ?>");
+				ProcessorConstants.UTF_8 + "\" ?>");
 
 				writer.println("<!DOCTYPE TEAMS_ASSET_FILE PUBLIC \"-//TEAMS//DTD "
 						+ "asset and link file//EN\" \"Tasset.dtd\" [");
@@ -269,11 +277,11 @@ public class AssetsXMLWriter {
 					transformer.setOutputProperty(
 							OutputKeys.OMIT_XML_DECLARATION, "yes");
 
-					transformer.setOutputProperty(OutputKeys.ENCODING, ProcessorConstants.CHARSET);
+					transformer.setOutputProperty(OutputKeys.ENCODING, ProcessorConstants.UTF_8);
 
 					StreamResult streamResult = new StreamResult( 
 							new OutputStreamWriter(
-									bos, ProcessorConstants.CHARSET)
+									bos, ProcessorConstants.UTF_8)
 							);
 
 

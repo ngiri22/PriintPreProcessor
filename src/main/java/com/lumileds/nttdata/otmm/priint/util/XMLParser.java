@@ -79,7 +79,8 @@ public class XMLParser {
 				Element uoisElement = metadataElement.element(ProcessorConstants.XML_UOIS_ELEMENT);
 				assetMetadata.setAuthor(uoisElement.attribute(ProcessorConstants.XML_AUTHOR_ATTRIBUTE).getStringValue());
 				assetMetadata.setSubject(uoisElement.attribute(ProcessorConstants.XML_SUBJECT_ATTRIBUTE).getStringValue());
-				assetMetadata.setModelID(uoisElement.attribute(ProcessorConstants.XML_MODEL_ID_ATTRIBUTE).getStringValue());
+				//assetMetadata.setModelID(uoisElement.attribute(ProcessorConstants.XML_MODEL_ID_ATTRIBUTE).getStringValue());
+				assetMetadata.setModelID(ProcessorConstants.MODEL_ID);
 				assetMetadata.setName(uoisElement.attribute(ProcessorConstants.XML_NAME_ATTRIBUTE).getStringValue());
 
 

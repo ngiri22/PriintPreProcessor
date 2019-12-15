@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.nio.file.StandardCopyOption;
+import java.sql.Connection;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
@@ -17,9 +18,11 @@ import org.slf4j.LoggerFactory;
 
 import com.lumileds.nttdata.otmm.priint.config.ProcessorConstants;
 import com.lumileds.nttdata.otmm.priint.data.AssetMetadata;
+import com.lumileds.nttdata.otmm.priint.repository.SQLRepository;
 import com.lumileds.nttdata.otmm.priint.util.AssetsXMLWriter;
 import com.lumileds.nttdata.otmm.priint.util.CmdLiner;
 import com.lumileds.nttdata.otmm.priint.util.FilesUtility;
+import com.lumileds.nttdata.otmm.priint.util.OTMMRestClient;
 import com.lumileds.nttdata.otmm.priint.util.XMLParser;
 
 public class PriintPreProcessor {
@@ -124,7 +127,33 @@ public class PriintPreProcessor {
 			if ( folderSet.size() > 0) {
 				filesUtility.deleteFolders(folderSet);
 			}
+			
+			OTMMRestClient otmmRestClient = new OTMMRestClient();
+			
+			String otmmAuthToken = otmmRestClient.getSessionToken();
 
+			for (AssetMetadata assetMetadata : totalAssetsSet) {
+				
+				String latestAssetVersionUoiID = assetMetadata.getLatestOTMMVersionUoiID();
+				
+				
+				// If the asset already exists,
+				// add the asset as Version.
+				
+				if (null != latestAssetVersionUoiID) {
+					
+					otmmRestClient.checkInAsset(
+							latestAssetVersionUoiID,
+							otmmAuthToken,
+							assetMetadata.getDestinationFolder() +
+							ProcessorConstants.BACK_SLASH +
+							assetMetadata.getName()
+							);
+					
+				}
+				
+			}
+			
 		} 
 
 	}
@@ -138,21 +167,45 @@ public class PriintPreProcessor {
 		Set<AssetMetadata> prsAssetsSet = new HashSet<AssetMetadata>();
 		Set<AssetMetadata> cpisAssetsSet = new HashSet<AssetMetadata>();
 
+		
+		SQLRepository sqlRepository = new SQLRepository();
+
+		//Get the SQL Connection
+		Connection conn = sqlRepository.createConnection();
 
 		for (AssetMetadata assetMetadata : totalAssetsSet) {
 
-
 			String destinationFolder;
+			
+			String latestOTMMVersionUoiID ;
+			
+			String assetName = assetMetadata.getName();
 
-			if (assetMetadata.getName().
-					contains(ProcessorConstants.DRAFT_PATTERN)) {
+			if (assetName.contains(ProcessorConstants.DRAFT_PATTERN)) {
 
 				logger.debug("Adding to Draft FileSet");
+				
+				latestOTMMVersionUoiID = sqlRepository.getLatestOTMMVersionUoiID(
+						conn,
+						assetName,
+						ProcessorConstants.OTMM_DRAFT_FOLDER_ID);
 
-				destinationFolder = ProcessorConstants.DRAFT_FOLDER;
-
-				draftAssetsSet.add(assetMetadata);
-
+				if (null != latestOTMMVersionUoiID) {
+				
+					destinationFolder = ProcessorConstants.DRAFT_FOLDER
+							+ ProcessorConstants.BACK_SLASH
+							+ ProcessorConstants.VERSIONS ;
+					
+					assetMetadata.setLatestOTMMVersionUoiID(latestOTMMVersionUoiID);
+				}
+				else {
+					
+					destinationFolder = ProcessorConstants.DRAFT_FOLDER
+							+ ProcessorConstants.BACK_SLASH
+							+ ProcessorConstants.ORIGINAL ;
+					
+					draftAssetsSet.add(assetMetadata);
+				}
 
 			}
 			else {
@@ -160,32 +213,89 @@ public class PriintPreProcessor {
 				//Check if PIS,PRS or CPIS
 				if (assetMetadata.getName().
 						contains(ProcessorConstants.FINAL_CPIS_PATTERN)) {
-
-					destinationFolder = ProcessorConstants.FINAL_CPIS_FOLDER;
-
+					
 					logger.debug("Adding to Final CPIS FileSet");
+					
+					latestOTMMVersionUoiID = sqlRepository.getLatestOTMMVersionUoiID(
+							conn,
+							assetName,
+							ProcessorConstants.OTMM_CPIS_FOLDER_ID);
 
-					pisAssetsSet.add(assetMetadata);
+					if (null != latestOTMMVersionUoiID) {
+					
+						destinationFolder = ProcessorConstants.FINAL_CPIS_FOLDER
+								+ ProcessorConstants.BACK_SLASH
+								+ ProcessorConstants.VERSIONS ;
+						
+						assetMetadata.setLatestOTMMVersionUoiID(latestOTMMVersionUoiID);
+						
+					}
+					else {
+						
+						destinationFolder = ProcessorConstants.FINAL_CPIS_FOLDER
+								+ ProcessorConstants.BACK_SLASH
+								+ ProcessorConstants.ORIGINAL ;
+						
+						pisAssetsSet.add(assetMetadata);
+					}					
 
 				}
 				else if (assetMetadata.getName().
 						contains(ProcessorConstants.FINAL_PRS_PATTERN)) {
 
-					destinationFolder = ProcessorConstants.FINAL_PRS_FOLDER;
-
 					logger.debug("Adding to Final PRS FileSet");
+					
+					latestOTMMVersionUoiID = sqlRepository.getLatestOTMMVersionUoiID(
+							conn,
+							assetName,
+							ProcessorConstants.OTMM_PRS_FOLDER_ID);
 
-					prsAssetsSet.add(assetMetadata);
+					if (null != latestOTMMVersionUoiID) {
+					
+						destinationFolder = ProcessorConstants.FINAL_PRS_FOLDER
+								+ ProcessorConstants.BACK_SLASH
+								+ ProcessorConstants.VERSIONS ;
+						
+						assetMetadata.setLatestOTMMVersionUoiID(latestOTMMVersionUoiID);
+						
+					}					
+					else {
+						
+						destinationFolder = ProcessorConstants.FINAL_PRS_FOLDER
+								+ ProcessorConstants.BACK_SLASH
+								+ ProcessorConstants.ORIGINAL ;
+						
+						prsAssetsSet.add(assetMetadata);
+					}
 
 				}
 				else {
 
-					destinationFolder = ProcessorConstants.FINAL_PIS_FOLDER;
-
 					logger.debug("Adding to Final PIS FileSet");
+					
+					latestOTMMVersionUoiID = sqlRepository.getLatestOTMMVersionUoiID(
+							conn,
+							assetName,
+							ProcessorConstants.OTMM_PIS_FOLDER_ID);
 
-					cpisAssetsSet.add(assetMetadata);
-
+					if (null != latestOTMMVersionUoiID) {
+					
+						destinationFolder = ProcessorConstants.FINAL_PIS_FOLDER
+								+ ProcessorConstants.BACK_SLASH
+								+ ProcessorConstants.VERSIONS ;
+						
+						assetMetadata.setLatestOTMMVersionUoiID(latestOTMMVersionUoiID);
+						
+					}
+					else {
+						
+						destinationFolder = ProcessorConstants.FINAL_PIS_FOLDER
+								+ ProcessorConstants.BACK_SLASH
+								+ ProcessorConstants.ORIGINAL ;
+						
+						cpisAssetsSet.add(assetMetadata);
+					}
+					
 				}
 
 			}

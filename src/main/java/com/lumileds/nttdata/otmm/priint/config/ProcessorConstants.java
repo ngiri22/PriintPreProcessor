@@ -32,7 +32,8 @@ public class ProcessorConstants {
 	public static final String DOT = ".";
 	public static final String UNDER_SCORE = "_";
 	public static final String XML_EXTENSION = ".xml";
-	public static final String CHARSET = "UTF-8";
+	public static final String UTF_8 = "UTF-8";
+	public static final String CHARSET = "charset";
 	
 	//public static enum FILE_PATTERN { DRAFT, PIS, PRS, CPIS } ;
 	
@@ -73,20 +74,32 @@ public class ProcessorConstants {
 	public static final String OUTPUT_XML_FILE = "OTMM_BATCH";
 	
 	
-	public static final String SESSIONS_URL = "sessions";
 	public static final String OTMM_API_URL = Configurations.getInstance().getProperty("otmm.api.url");
+	public static final String SESSIONS = "sessions";
 	public static final String FRONT_SLASH = "/";	
 	public static final String ASSETS_URL = "assets";
 	public static final String STATE_URL = "state";
 	public static final String PASSWORD = "password";
 	public static final String USERNAME = "username";
 	public static final String EQUALS = "=";
+	public static final String AMPERSAND = "&";	
+	
 	public static final String OTMM_USER_NAME = Configurations.getInstance().getProperty("otmm.api.username");
 	public static final String OTMM_PASSWORD = Configurations.getInstance().getProperty("otmm.api.password");
-	public static final String AMPERSAND = "&";	
+	public static final String MODEL_ID = Configurations.getInstance().getProperty("otmm.metadata.modelID");
+	public static final String OTMM_DRAFT_FOLDER_ID = 
+			Configurations.getInstance().getProperty("otmm.metadata.draftFolderID");
+	public static final String OTMM_CPIS_FOLDER_ID = 
+			Configurations.getInstance().getProperty("otmm.metadata.cpisFolderID");
+	public static final String OTMM_PIS_FOLDER_ID = 
+			Configurations.getInstance().getProperty("otmm.metadata.pisFolderID");
+	public static final String OTMM_PRS_FOLDER_ID = 
+			Configurations.getInstance().getProperty("otmm.metadata.prsFolderID");
+	
 	
 	
 	public static final String POST = "POST";
+	public static final String HTTP_PUT = "PUT";
 	public static final String CONTENT_TYPE = "Content-Type";
 	public static final String FORM_URL_ENCODE = "application/x-www-form-urlencoded";
 	public static final int CONNECT_TIMEOUT = 30000;
@@ -94,14 +107,41 @@ public class ProcessorConstants {
 	//public static final String OTMM_API_VERSION = "v4";
 
 	public static final String CONTENT_LENGTH = "Content-Length";
+	public static final String SESSION_RESOURCE = "session_resource";
+	public static final String SESSION = "session";
 	public static final String MESSAGE_DIGEST = "message_digest";
 	public static final String DELETE_FLAG = "DELETE";
 	public static final String PURGE_FLAG = "PURGE";
-	public static final String DELETE_ACTION_URL_PARAMS = "action=delete&"
-						+ "asset_state_options={ \"asset_state_options_param\":"
+	public static final String ASSET_STATE_URL_PARAMS = "asset_state_options="
+						+ "{ \"asset_state_options_param\":"
 						+ " { \"asset_state_options\":"
 						+ " { \"apply_to_all_versions\": false"
-						+ " } } }";;
+						+ " } } }";
+	
+	public static final String OTMM_AUTH_TOKEN = "otmmauthtoken";
+	public static final String ACTION = "action";
+	public static final String DELETE = "delete";
+	public static final String CHECK_OUT = "check_out";
+	public static final String LOCK = "lock";
+	public static final String JOBS = "jobs";
+	
+	public static final String IMPORTS = "imports";
+	public static final String JOB_HANDLE = "job_handle";
+	public static final String JOB_ID = "job_id";
+	
+	public static final String RENDITIONS = "renditions";
+	public static final String MULTIPART_FORM_WITH_BOUNDARY = "multipart/form-data; boundary=";
+	public static final String APPLICATION_JSON = "application/json";
+	
+	public static final String CRLF = "\r\n";
+	public static final String IMPORT_JOB_ID = "import_job_id";
+	public static final String CHECKINS = "checkins";
+	public static final String VERSIONS = "VERSIONS";
+	public static final String ORIGINAL = "ORIGINAL";
+	public static final String Y_FLAG = "Y";
+	
+	
+	
 	
 	
 		

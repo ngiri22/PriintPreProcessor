@@ -23,6 +23,7 @@ public class AssetMetadata {
 	private String brand;
 	
 	private String securityPolicyID;
+	private String latestOTMMVersionUoiID;
 
 	@Override
 	public boolean equals(Object obj) {
