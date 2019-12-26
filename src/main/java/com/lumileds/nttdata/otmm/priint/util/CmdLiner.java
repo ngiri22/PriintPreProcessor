@@ -7,8 +7,6 @@ import java.io.InputStreamReader;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.lumileds.nttdata.otmm.priint.config.ProcessorConstants;
-
 public class CmdLiner {
 
 	private static final Logger logger = LoggerFactory.getLogger(CmdLiner.class);

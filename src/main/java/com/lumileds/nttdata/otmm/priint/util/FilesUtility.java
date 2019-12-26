@@ -4,7 +4,6 @@ import java.io.File;
 import java.io.FilenameFilter;
 import java.io.IOException;
 import java.nio.file.Files;
-import java.nio.file.LinkOption;
 import java.nio.file.Paths;
 import java.nio.file.StandardCopyOption;
 import java.util.ArrayList;
@@ -12,9 +11,7 @@ import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Set;
-import java.util.concurrent.TimeUnit;
 
-import org.dom4j.DocumentException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -233,7 +230,10 @@ public class FilesUtility {
 			
 			for (AssetMetadata assetMetadata : totalAssetsSet) {
 				
-				logger.debug("Moving File : {} \\ {}", assetMetadata.getFolderName(), assetMetadata.getName());
+				logger.debug("Moving File : {} \\ {} to {}", 
+						assetMetadata.getFolderName(),
+						assetMetadata.getName(),
+						assetMetadata.getDestinationFolder());
 
 				Files.move(
 						Paths.get(

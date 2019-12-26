@@ -1,12 +1,7 @@
 package com.lumileds.nttdata.otmm.priint;
 
 import java.io.File;
-import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Paths;
-import java.nio.file.StandardCopyOption;
 import java.sql.Connection;
-import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
@@ -249,6 +244,8 @@ public class PriintPreProcessor {
 							conn,
 							assetName,
 							ProcessorConstants.OTMM_PRS_FOLDER_ID);
+					
+					logger.debug("Latest version UOI ID: {}", latestOTMMVersionUoiID);
 
 					if (null != latestOTMMVersionUoiID) {
 					

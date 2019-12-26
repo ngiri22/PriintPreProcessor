@@ -6,6 +6,7 @@ HOTFOLDER/
 ARCHIVE/
 priint/
 bin/
+config.properties
 
 # Log file
 *.log
