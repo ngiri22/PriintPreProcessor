@@ -15,6 +15,7 @@ import com.lumileds.nttdata.otmm.priint.config.ProcessorConstants;
 import com.lumileds.nttdata.otmm.priint.data.AssetMetadata;
 import com.lumileds.nttdata.otmm.priint.repository.SQLRepository;
 import com.lumileds.nttdata.otmm.priint.util.AssetsXMLWriter;
+import com.lumileds.nttdata.otmm.priint.util.CPISAssetsXMLWriter;
 import com.lumileds.nttdata.otmm.priint.util.CmdLiner;
 import com.lumileds.nttdata.otmm.priint.util.FilesUtility;
 import com.lumileds.nttdata.otmm.priint.util.OTMMRestClient;
@@ -156,6 +157,9 @@ public class PriintPreProcessor {
 	private static void createBatchXMLs(Set<AssetMetadata> totalAssetsSet) {
 
 		AssetsXMLWriter xmlWriter = new AssetsXMLWriter();
+		
+		//CPIS writer for Commercial assets
+		CPISAssetsXMLWriter cpisXMLWriter = new CPISAssetsXMLWriter();
 
 		Set<AssetMetadata> draftAssetsSet = new HashSet<AssetMetadata>();
 		Set<AssetMetadata> pisAssetsSet = new HashSet<AssetMetadata>();
@@ -231,7 +235,7 @@ public class PriintPreProcessor {
 								+ ProcessorConstants.BACK_SLASH
 								+ ProcessorConstants.ORIGINAL ;
 						
-						pisAssetsSet.add(assetMetadata);
+						cpisAssetsSet.add(assetMetadata);
 					}					
 
 				}
@@ -290,7 +294,7 @@ public class PriintPreProcessor {
 								+ ProcessorConstants.BACK_SLASH
 								+ ProcessorConstants.ORIGINAL ;
 						
-						cpisAssetsSet.add(assetMetadata);
+						pisAssetsSet.add(assetMetadata);
 					}
 					
 				}
@@ -301,8 +305,10 @@ public class PriintPreProcessor {
 
 		} 
 
+		cpisXMLWriter.generateXML(cpisAssetsSet, ProcessorConstants.FINAL_CPIS_PATTERN);
+		
+		
 		xmlWriter.generateXML(draftAssetsSet, ProcessorConstants.DRAFT_PATTERN);
-		xmlWriter.generateXML(cpisAssetsSet, ProcessorConstants.FINAL_CPIS_PATTERN);
 		xmlWriter.generateXML(prsAssetsSet, ProcessorConstants.FINAL_PRS_PATTERN);
 		xmlWriter.generateXML(pisAssetsSet, ProcessorConstants.FINAL_PIS_PATTERN);
 		

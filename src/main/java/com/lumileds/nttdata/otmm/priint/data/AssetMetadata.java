@@ -7,7 +7,7 @@ public class AssetMetadata {
 	
 	private String author;
 	private String subject;
-	private String modelID;
+	//private String modelID;
 	private String name;
 	
 	private String folderName;
@@ -22,7 +22,7 @@ public class AssetMetadata {
 	private String keywords;
 	private String brand;
 	
-	private String securityPolicyID;
+	//private String securityPolicyID;
 	private String latestOTMMVersionUoiID;
 
 	@Override

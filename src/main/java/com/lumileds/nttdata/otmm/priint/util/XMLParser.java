@@ -77,7 +77,7 @@ public class XMLParser {
 				assetMetadata.setAuthor(uoisElement.attribute(ProcessorConstants.XML_AUTHOR_ATTRIBUTE).getStringValue());
 				assetMetadata.setSubject(uoisElement.attribute(ProcessorConstants.XML_SUBJECT_ATTRIBUTE).getStringValue());
 				//assetMetadata.setModelID(uoisElement.attribute(ProcessorConstants.XML_MODEL_ID_ATTRIBUTE).getStringValue());
-				assetMetadata.setModelID(ProcessorConstants.MODEL_ID);
+				//assetMetadata.setModelID(ProcessorConstants.MODEL_ID);
 				assetMetadata.setName(uoisElement.attribute(ProcessorConstants.XML_NAME_ATTRIBUTE).getStringValue());
 
 
@@ -97,8 +97,8 @@ public class XMLParser {
 				assetMetadata.setBrand(mediaInfoElement.attribute(ProcessorConstants.XML_BRAND_ATTRIBUTE).getStringValue());
 
 
-				Element securityPolicyUOIS = uoisElement.element(ProcessorConstants.XML_SECURITY_POLICY_ELEMENT);
-				assetMetadata.setSecurityPolicyID(securityPolicyUOIS.attribute(ProcessorConstants.XML_SECURITY_POLICY_ID_ATTRIBUTE).getStringValue());
+				//Element securityPolicyUOIS = uoisElement.element(ProcessorConstants.XML_SECURITY_POLICY_ELEMENT);
+				//assetMetadata.setSecurityPolicyID(securityPolicyUOIS.attribute(ProcessorConstants.XML_SECURITY_POLICY_ID_ATTRIBUTE).getStringValue());
 
 				assetMetadata.setFolderName(folderName);
 

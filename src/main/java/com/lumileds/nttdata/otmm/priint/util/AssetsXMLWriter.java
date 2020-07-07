@@ -49,6 +49,8 @@ public class AssetsXMLWriter {
 					ProcessorConstants.XML_EXTENSION ;
 
 		}
+		
+		/*
 		else if (folderPattern.toString().contains(ProcessorConstants.FINAL_CPIS_PATTERN)) {
 
 			metadataXML = ProcessorConstants.FINAL_CPIS_FOLDER + 
@@ -61,7 +63,7 @@ public class AssetsXMLWriter {
 					ProcessorConstants.XML_EXTENSION ;
 			
 
-		}
+		}*/
 		else if (folderPattern.toString().contains(ProcessorConstants.FINAL_PRS_PATTERN)) {
 
 			metadataXML = ProcessorConstants.FINAL_PRS_FOLDER + 
@@ -184,7 +186,7 @@ public class AssetsXMLWriter {
 
 						uoisElement.setAttribute(
 								ProcessorConstants.XML_MODEL_ID_ATTRIBUTE, 
-								assetMetadata.getModelID()
+								ProcessorConstants.XML_IND_MODEL_ID
 								);
 
 						fileInfoElement.setAttribute(
@@ -219,7 +221,8 @@ public class AssetsXMLWriter {
 
 						securityPolicyUOISElement.setAttribute(
 								ProcessorConstants.XML_SECURITY_POLICY_ID_ATTRIBUTE,
-								assetMetadata.getSecurityPolicyID());
+								ProcessorConstants.XML_IND_SECURITY_POLICY_ID
+								);
 
 						masterElement.setAttribute(
 								ProcessorConstants.XML_FILE_ATTRIBUTE,
@@ -266,17 +269,22 @@ public class AssetsXMLWriter {
 					//start outputting doc to byteArrayOutputStream
 					TransformerFactory transformerFactory = TransformerFactory.newInstance();
 
-					transformerFactory.setAttribute("indent-number", new Integer(2));
+					transformerFactory.setAttribute(
+							ProcessorConstants.INDENT_NUMBER,
+							new Integer(2));
 
 					Transformer transformer = transformerFactory.newTransformer();
 					transformer.setOutputProperty(
-							OutputKeys.INDENT, "yes");
+							OutputKeys.INDENT,
+							ProcessorConstants.YES_FLAG);
 
 					//OMIT_XML_DECLARATION so it won't make doctype declaration misplaced
 					transformer.setOutputProperty(
-							OutputKeys.OMIT_XML_DECLARATION, "yes");
+							OutputKeys.OMIT_XML_DECLARATION,
+							ProcessorConstants.YES_FLAG);
 
-					transformer.setOutputProperty(OutputKeys.ENCODING, ProcessorConstants.UTF_8);
+					transformer.setOutputProperty(OutputKeys.ENCODING, 
+							ProcessorConstants.UTF_8);
 
 					StreamResult streamResult = new StreamResult( 
 							new OutputStreamWriter(

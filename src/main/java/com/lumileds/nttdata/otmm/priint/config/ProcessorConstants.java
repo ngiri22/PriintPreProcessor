@@ -70,6 +70,16 @@ public class ProcessorConstants {
 	public static final String XML_NAME_ATTRIBUTE = "NAME";
 	public static final String XML_FILE_ATTRIBUTE = "FILE";
 	
+	//START of changes for CPIS Assets
+	public static final String XML_COMM_VISUAL_RIGHTS_APPLICABLE_ELEMENT = "LUM_MD_VISUAL_COPYRIGHTS";
+	public static final String XML_COMM_MUSIC_RIGHTS_APPLICABLE_ELEMENT = "LUM_MD_MUSIC_COPYRIGHTS";
+	
+	public static final String XML_COMM_VISUAL_RIGHTS_APPLICABLE_ATTRIBUTE = "COPYRIGHT_VISUAL_APPLICABLE";
+	public static final String XML_COMM_MUSIC_RIGHTS_APPLICABLE_ATTRIBUTE = "COPYRIGHT_MUSIC_APPLICABLE";
+	
+	
+	//END of changes for CPIS Assets
+	
 	public static final long TIME_DELAY_IN_MICROSECONDS = 300000; //5 minutes
 	public static final String OUTPUT_XML_FILE = "OTMM_BATCH";
 	
@@ -86,7 +96,7 @@ public class ProcessorConstants {
 	
 	public static final String OTMM_USER_NAME = Configurations.getInstance().getProperty("otmm.api.username");
 	public static final String OTMM_PASSWORD = Configurations.getInstance().getProperty("otmm.api.password");
-	public static final String MODEL_ID = Configurations.getInstance().getProperty("otmm.metadata.modelID");
+	//public static final String MODEL_ID = Configurations.getInstance().getProperty("otmm.metadata.modelID");
 	public static final String OTMM_DRAFT_FOLDER_ID = 
 			Configurations.getInstance().getProperty("otmm.metadata.draftFolderID");
 	public static final String OTMM_CPIS_FOLDER_ID = 
@@ -104,6 +114,7 @@ public class ProcessorConstants {
 	public static final String FORM_URL_ENCODE = "application/x-www-form-urlencoded";
 	public static final int CONNECT_TIMEOUT = 30000;
 	public static final int READ_TIMEOUT = 30000;
+	public static final String INDENT_NUMBER = "indent-number";
 	//public static final String OTMM_API_VERSION = "v4";
 
 	public static final String CONTENT_LENGTH = "Content-Length";
@@ -139,7 +150,18 @@ public class ProcessorConstants {
 	public static final String VERSIONS = "VERSIONS";
 	public static final String ORIGINAL = "ORIGINAL";
 	public static final String Y_FLAG = "Y";
+	public static final String YES_FLAG = "yes";
+	public static final String N_FLAG = "N";
 	
+	public static final String XML_COMM_SECURITY_POLICY_ID = 
+			Configurations.getInstance().getProperty("otmm.metadata.comm.securityPolicyID");
+	public static final String XML_COMM_MODEL_ID = 
+			Configurations.getInstance().getProperty("otmm.metadata.comm.modelID");
+	
+	public static final String XML_IND_SECURITY_POLICY_ID = 
+			Configurations.getInstance().getProperty("otmm.metadata.ind.securityPolicyID");
+	public static final String XML_IND_MODEL_ID = 
+			Configurations.getInstance().getProperty("otmm.metadata.ind.modelID");
 	
 	
 	
