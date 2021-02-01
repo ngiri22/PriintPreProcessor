@@ -13,6 +13,7 @@ import org.slf4j.LoggerFactory;
 
 import com.lumileds.nttdata.otmm.priint.config.ProcessorConstants;
 import com.lumileds.nttdata.otmm.priint.data.AssetMetadata;
+import com.lumileds.nttdata.otmm.priint.data.SessionResponse;
 import com.lumileds.nttdata.otmm.priint.repository.SQLRepository;
 import com.lumileds.nttdata.otmm.priint.util.AssetsXMLWriter;
 import com.lumileds.nttdata.otmm.priint.util.CPISAssetsXMLWriter;
@@ -126,7 +127,7 @@ public class PriintPreProcessor {
 			
 			OTMMRestClient otmmRestClient = new OTMMRestClient();
 			
-			String otmmAuthToken = otmmRestClient.getSessionToken();
+			SessionResponse sessionResponse = otmmRestClient.getSessionToken();
 
 			for (AssetMetadata assetMetadata : totalAssetsSet) {
 				
@@ -140,7 +141,7 @@ public class PriintPreProcessor {
 					
 					otmmRestClient.checkInAsset(
 							latestAssetVersionUoiID,
-							otmmAuthToken,
+							sessionResponse,
 							assetMetadata.getDestinationFolder() +
 							ProcessorConstants.BACK_SLASH +
 							assetMetadata.getName()

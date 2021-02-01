@@ -50,6 +50,17 @@ public class ProcessorConstants {
 	public static final String XML_MEDIA_INFO_ELEMENT = "LUM_MD_MEDIA_INFO";
 	public static final String XML_SECURITY_POLICY_ELEMENT = "SECURITY_POLICY_UOIS";
 	
+	//Start of changes for DigitalHub Publish To Microsite and Languages
+	
+	public static final String XML_DIGI_HUB_INFO_TAB_ELEMENT = "LUM_MD_DIGI_HUB_INFO_TAB";
+	public static final String XML_PUB_TO_MICROSITE_ATTRIBUTE = "PUBLISH_TO_MICROSITE";
+	
+	public static final String XML_LANGUAGES_TAB_ELEMENT = "LUM_MD_LANGUAGES_TAB";
+	public static final String XML_LANGUAGES_ATTRIBUTE = "LANGUAGES";	
+	
+	//End of changes for DigitalHub Publish To Microsite and Languages
+	
+	
 	public static final String XML_AUTHOR_ATTRIBUTE = "AUTHOR";
 	public static final String XML_SUBJECT_ATTRIBUTE = "SUBJECT";
 	public static final String XML_MODEL_ID_ATTRIBUTE = "MODEL_ID";
@@ -72,11 +83,20 @@ public class ProcessorConstants {
 	
 	//START of changes for CPIS Assets
 	public static final String XML_COMM_VISUAL_RIGHTS_APPLICABLE_ELEMENT = "LUM_MD_VISUAL_COPYRIGHTS";
-	public static final String XML_COMM_MUSIC_RIGHTS_APPLICABLE_ELEMENT = "LUM_MD_MUSIC_COPYRIGHTS";
+	public static final String XML_COMM_MUSIC_RIGHTS_APPLICABLE_ELEMENT = "LUM_MD_MUSIC_RIGHTS";
 	
 	public static final String XML_COMM_VISUAL_RIGHTS_APPLICABLE_ATTRIBUTE = "COPYRIGHT_VISUAL_APPLICABLE";
 	public static final String XML_COMM_MUSIC_RIGHTS_APPLICABLE_ATTRIBUTE = "COPYRIGHT_MUSIC_APPLICABLE";
 	
+	public static final String XML_PUB_TO_MICROSITE_INDPIM_VALUE = 
+			Configurations.getInstance().getProperty("otmm.metadata.pubToMicrosite.indPIM");
+	public static final String XML_PUB_TO_MICROSITE_AMPIM_VALUE = 
+			Configurations.getInstance().getProperty("otmm.metadata.pubToMicrosite.amPIM");
+	public static final String XML_PUB_TO_MICROSITE_OEMPIM_VALUE = 
+			Configurations.getInstance().getProperty("otmm.metadata.pubToMicrosite.oemPIM");
+	
+	public static final String XML_LANGUAGES_VALUE = 
+			Configurations.getInstance().getProperty("otmm.metadata.languages");
 	
 	//END of changes for CPIS Assets
 	
@@ -162,6 +182,10 @@ public class ProcessorConstants {
 			Configurations.getInstance().getProperty("otmm.metadata.ind.securityPolicyID");
 	public static final String XML_IND_MODEL_ID = 
 			Configurations.getInstance().getProperty("otmm.metadata.ind.modelID");
+	
+	//Changes for v5 otmmapi
+	public static final String ID = "id";
+	public static final String X_REQUESTED_BY = "X-Requested-By";
 	
 	
 	
