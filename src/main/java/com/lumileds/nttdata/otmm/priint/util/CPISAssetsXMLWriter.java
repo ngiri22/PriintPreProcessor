@@ -28,10 +28,10 @@ import org.w3c.dom.Element;
 import com.lumileds.nttdata.otmm.priint.config.ProcessorConstants;
 import com.lumileds.nttdata.otmm.priint.data.AssetMetadata;
 
-public class AssetsXMLWriter {
-	
-	//sample comment
+public class CPISAssetsXMLWriter {
 
+	//Sample comment again.
+	
 	private final Logger logger = LoggerFactory.getLogger(FilesUtility.class);
 
 	public void generateXML(Set<AssetMetadata> assetMetadataList, 
@@ -39,9 +39,7 @@ public class AssetsXMLWriter {
 
 		String metadataXML ;
 
-		if (folderPattern.toString().contains(ProcessorConstants.DRAFT_PATTERN)) {
-
-			metadataXML = ProcessorConstants.DRAFT_FOLDER + 
+		metadataXML = ProcessorConstants.FINAL_CPIS_FOLDER + 
 					ProcessorConstants.BACK_SLASH +
 					ProcessorConstants.ORIGINAL +
 					ProcessorConstants.BACK_SLASH +
@@ -49,47 +47,7 @@ public class AssetsXMLWriter {
 					ProcessorConstants.UNDER_SCORE +
 					System.currentTimeMillis() + 
 					ProcessorConstants.XML_EXTENSION ;
-
-		}
 		
-		/*
-		else if (folderPattern.toString().contains(ProcessorConstants.FINAL_CPIS_PATTERN)) {
-
-			metadataXML = ProcessorConstants.FINAL_CPIS_FOLDER + 
-					ProcessorConstants.BACK_SLASH +
-					ProcessorConstants.ORIGINAL +
-					ProcessorConstants.BACK_SLASH +
-					ProcessorConstants.OUTPUT_XML_FILE +
-					ProcessorConstants.UNDER_SCORE +
-					System.currentTimeMillis() + 
-					ProcessorConstants.XML_EXTENSION ;
-			
-
-		}*/
-		else if (folderPattern.toString().contains(ProcessorConstants.FINAL_PRS_PATTERN)) {
-
-			metadataXML = ProcessorConstants.FINAL_PRS_FOLDER + 
-					ProcessorConstants.BACK_SLASH +
-					ProcessorConstants.ORIGINAL +
-					ProcessorConstants.BACK_SLASH +
-					ProcessorConstants.OUTPUT_XML_FILE +
-					ProcessorConstants.UNDER_SCORE +
-					System.currentTimeMillis() + 
-					ProcessorConstants.XML_EXTENSION ;
-
-		}
-		else  {
-
-			metadataXML = ProcessorConstants.FINAL_PIS_FOLDER + 
-					ProcessorConstants.BACK_SLASH +
-					ProcessorConstants.ORIGINAL +
-					ProcessorConstants.BACK_SLASH +
-					ProcessorConstants.OUTPUT_XML_FILE +
-					ProcessorConstants.UNDER_SCORE +
-					System.currentTimeMillis() + 
-					ProcessorConstants.XML_EXTENSION ;		
-
-		}
 
 		if ( assetMetadataList.size() > 0 ) {
 
@@ -166,6 +124,13 @@ public class AssetsXMLWriter {
 
 						Element mediaInfoElement = 
 								doc.createElement(ProcessorConstants.XML_MEDIA_INFO_ELEMENT);
+						
+						Element commVisualRightsElement =
+								doc.createElement(ProcessorConstants.XML_COMM_VISUAL_RIGHTS_APPLICABLE_ELEMENT);
+						
+						Element commMusicRightsElement =
+								doc.createElement(ProcessorConstants.XML_COMM_MUSIC_RIGHTS_APPLICABLE_ELEMENT);
+
 
 						Element securityPolicyUOISElement = 
 								doc.createElement(ProcessorConstants.XML_SECURITY_POLICY_ELEMENT);
@@ -198,7 +163,7 @@ public class AssetsXMLWriter {
 
 						uoisElement.setAttribute(
 								ProcessorConstants.XML_MODEL_ID_ATTRIBUTE, 
-								ProcessorConstants.XML_IND_MODEL_ID
+								ProcessorConstants.XML_COMM_MODEL_ID
 								);
 
 						fileInfoElement.setAttribute(
@@ -230,22 +195,28 @@ public class AssetsXMLWriter {
 								ProcessorConstants.XML_BRAND_ATTRIBUTE, 
 								assetMetadata.getBrand()
 								);
+						
+						commVisualRightsElement.setAttribute(
+								ProcessorConstants.XML_COMM_VISUAL_RIGHTS_APPLICABLE_ATTRIBUTE,
+								ProcessorConstants.N_FLAG);
+						
+						commMusicRightsElement.setAttribute(
+								ProcessorConstants.XML_COMM_MUSIC_RIGHTS_APPLICABLE_ATTRIBUTE,
+								ProcessorConstants.N_FLAG);
 
 						securityPolicyUOISElement.setAttribute(
 								ProcessorConstants.XML_SECURITY_POLICY_ID_ATTRIBUTE,
-								ProcessorConstants.XML_IND_SECURITY_POLICY_ID
-								);
+								ProcessorConstants.XML_COMM_SECURITY_POLICY_ID);
 
 						masterElement.setAttribute(
 								ProcessorConstants.XML_FILE_ATTRIBUTE,
 								"file_" + i
 								);
 
-						
 						//11-Dec-2020: Start of changes for DigitalHub Publish To Microsite and Languages
 						digitalHubTabularFirstElement.setAttribute(
 								ProcessorConstants.XML_PUB_TO_MICROSITE_ATTRIBUTE,
-								ProcessorConstants.XML_PUB_TO_MICROSITE_INDPIM_VALUE
+								ProcessorConstants.XML_PUB_TO_MICROSITE_AMPIM_VALUE
 								);
 						
 						languagesTabularElement.setAttribute(
@@ -255,33 +226,16 @@ public class AssetsXMLWriter {
 						
 						//11-Dec-2020: End of changes for DigitalHub Publish To Microsite and Languages
 						
-						
 						contentElement.appendChild(masterElement);
 
 						uoisElement.appendChild(fileInfoElement);
 						uoisElement.appendChild(digitalHubElement);
 						uoisElement.appendChild(mediaInfoTabularElement);
 						uoisElement.appendChild(mediaInfoElement);
-						//uoisElement.appendChild(digitalHubTabularFirstElement);
-						
-						//Extra logic for PIS Final Assets for Publish To Microsite
-						
-						if (folderPattern.toString().contains(ProcessorConstants.FINAL_PIS_PATTERN)) {
-							
-							Element digitalHubTabularSecondElement = 
-									doc.createElement(ProcessorConstants.XML_DIGI_HUB_INFO_TAB_ELEMENT);
-							
-							digitalHubTabularSecondElement.setAttribute(
-									ProcessorConstants.XML_PUB_TO_MICROSITE_ATTRIBUTE,
-									ProcessorConstants.XML_PUB_TO_MICROSITE_OEMPIM_VALUE
-									);
-							
-							//uoisElement.appendChild(digitalHubTabularSecondElement);
-							
-						}
-						
+						uoisElement.appendChild(commVisualRightsElement);
+						uoisElement.appendChild(commMusicRightsElement);
+						//uoisElement.appendChild(digitalHubTabularFirstElement);						
 						uoisElement.appendChild(languagesTabularElement);
-						
 						uoisElement.appendChild(securityPolicyUOISElement);
 
 						metadataElement.appendChild(uoisElement);
@@ -322,14 +276,14 @@ public class AssetsXMLWriter {
 
 					Transformer transformer = transformerFactory.newTransformer();
 					transformer.setOutputProperty(
-							OutputKeys.INDENT,
+							OutputKeys.INDENT, 
 							ProcessorConstants.YES_FLAG);
 
 					//OMIT_XML_DECLARATION so it won't make doctype declaration misplaced
 					transformer.setOutputProperty(
-							OutputKeys.OMIT_XML_DECLARATION,
+							OutputKeys.OMIT_XML_DECLARATION, 
 							ProcessorConstants.YES_FLAG);
-
+					
 					transformer.setOutputProperty(OutputKeys.ENCODING, 
 							ProcessorConstants.UTF_8);
 
