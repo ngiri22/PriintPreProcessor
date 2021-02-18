@@ -3,7 +3,6 @@ package com.lumileds.nttdata.otmm.priint.config;
 import java.util.Properties;
 
 import com.lumileds.nttdata.otmm.priint.config.Configurations;
-import com.lumileds.nttdata.otmm.priint.config.ProcessorConstants;
 
 public class Configurations {
 	

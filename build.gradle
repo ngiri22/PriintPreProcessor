@@ -16,6 +16,11 @@ apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'application'
 
+//systemProp.javax.net.ssl.trustStore=C:\\openjdk\\jdk14\\lib\\security\\cacerts
+//systemProp.javax.net.ssl.trustStorePassword=changeit
+
+System.setProperty('javax.net.ssl.trustStore', 'C:\\keystore\\cacerts')
+System.setProperty('javax.net.ssl.trustStorePassword', 'changeit')
 
 repositories {
 	mavenLocal()
@@ -29,7 +34,7 @@ mainClassName = 'com.lumileds.nttdata.otmm.priint.PriintPreProcessor'
 
 
 dependencies {
-	annotationProcessor ("org.projectlombok:lombok:1.18.10")
+	annotationProcessor ("org.projectlombok:lombok:1.18.18")
 	compile("org.projectlombok:lombok:1.18.10")
 	compile("org.dom4j:dom4j:2.0.2")
 	compile("org.slf4j:slf4j-log4j12:1.7.25")

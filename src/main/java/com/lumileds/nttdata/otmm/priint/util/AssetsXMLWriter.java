@@ -173,6 +173,16 @@ public class AssetsXMLWriter {
 
 						Element masterElement = 
 								doc.createElement(ProcessorConstants.XML_MASTER_ELEMENT);
+						
+						//11-Dec-2020: Start of changes for DigitalHub Publish To Microsite and Languages
+						
+						Element digitalHubTabularFirstElement = 
+								doc.createElement(ProcessorConstants.XML_DIGI_HUB_INFO_TAB_ELEMENT);
+						
+						Element languagesTabularElement = 
+								doc.createElement(ProcessorConstants.XML_LANGUAGES_TAB_ELEMENT);
+						
+						//11-Dec-2020: End of changes for DigitalHub Publish To Microsite and Languages
 
 						uoisElement.setAttribute(
 								ProcessorConstants.XML_AUTHOR_ATTRIBUTE, 
@@ -229,12 +239,47 @@ public class AssetsXMLWriter {
 								"file_" + i
 								);
 
+						
+						//11-Dec-2020: Start of changes for DigitalHub Publish To Microsite and Languages
+						digitalHubTabularFirstElement.setAttribute(
+								ProcessorConstants.XML_PUB_TO_MICROSITE_ATTRIBUTE,
+								ProcessorConstants.XML_PUB_TO_MICROSITE_INDPIM_VALUE
+								);
+						
+						languagesTabularElement.setAttribute(
+								ProcessorConstants.XML_LANGUAGES_ATTRIBUTE,
+								ProcessorConstants.XML_LANGUAGES_VALUE
+								);
+						
+						//11-Dec-2020: End of changes for DigitalHub Publish To Microsite and Languages
+						
+						
 						contentElement.appendChild(masterElement);
 
 						uoisElement.appendChild(fileInfoElement);
 						uoisElement.appendChild(digitalHubElement);
 						uoisElement.appendChild(mediaInfoTabularElement);
 						uoisElement.appendChild(mediaInfoElement);
+						//uoisElement.appendChild(digitalHubTabularFirstElement);
+						
+						//Extra logic for PIS Final Assets for Publish To Microsite
+						
+						if (folderPattern.toString().contains(ProcessorConstants.FINAL_PIS_PATTERN)) {
+							
+							Element digitalHubTabularSecondElement = 
+									doc.createElement(ProcessorConstants.XML_DIGI_HUB_INFO_TAB_ELEMENT);
+							
+							digitalHubTabularSecondElement.setAttribute(
+									ProcessorConstants.XML_PUB_TO_MICROSITE_ATTRIBUTE,
+									ProcessorConstants.XML_PUB_TO_MICROSITE_OEMPIM_VALUE
+									);
+							
+							//uoisElement.appendChild(digitalHubTabularSecondElement);
+							
+						}
+						
+						uoisElement.appendChild(languagesTabularElement);
+						
 						uoisElement.appendChild(securityPolicyUOISElement);
 
 						metadataElement.appendChild(uoisElement);
