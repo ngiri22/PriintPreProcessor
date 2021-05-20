@@ -196,6 +196,15 @@ public class CPISAssetsXMLWriter {
 								assetMetadata.getBrand()
 								);
 						
+						//11-Mar-2021 Start of changes for Segment
+
+						mediaInfoElement.setAttribute(
+								ProcessorConstants.XML_SEGMENT_ATTRIBUTE, 
+								ProcessorConstants.METADATA_SEGMENT_AUTOMOTIVE
+								);
+
+						//11-Mar-2021 End of changes for Segment
+						
 						commVisualRightsElement.setAttribute(
 								ProcessorConstants.XML_COMM_VISUAL_RIGHTS_APPLICABLE_ATTRIBUTE,
 								ProcessorConstants.N_FLAG);
@@ -234,7 +243,7 @@ public class CPISAssetsXMLWriter {
 						uoisElement.appendChild(mediaInfoElement);
 						uoisElement.appendChild(commVisualRightsElement);
 						uoisElement.appendChild(commMusicRightsElement);
-						//uoisElement.appendChild(digitalHubTabularFirstElement);						
+						uoisElement.appendChild(digitalHubTabularFirstElement);						
 						uoisElement.appendChild(languagesTabularElement);
 						uoisElement.appendChild(securityPolicyUOISElement);
 

@@ -25,6 +25,7 @@ import com.lumileds.nttdata.otmm.priint.util.XMLParser;
 public class PriintPreProcessor {
 
 	private static final Logger logger = LoggerFactory.getLogger(PriintPreProcessor.class);
+	
 
 	public static void main(String[] args) {
 

@@ -231,6 +231,15 @@ public class AssetsXMLWriter {
 								assetMetadata.getBrand()
 								);
 
+						//11-Mar-2021 Start of changes for Segment
+
+						mediaInfoElement.setAttribute(
+								ProcessorConstants.XML_SEGMENT_ATTRIBUTE, 
+								ProcessorConstants.METADATA_SEGMENT_AUTOMOTIVE
+								);
+
+						//11-Mar-2021 End of changes for Segment
+						
 						securityPolicyUOISElement.setAttribute(
 								ProcessorConstants.XML_SECURITY_POLICY_ID_ATTRIBUTE,
 								ProcessorConstants.XML_IND_SECURITY_POLICY_ID
@@ -262,7 +271,9 @@ public class AssetsXMLWriter {
 						uoisElement.appendChild(digitalHubElement);
 						uoisElement.appendChild(mediaInfoTabularElement);
 						uoisElement.appendChild(mediaInfoElement);
-						//uoisElement.appendChild(digitalHubTabularFirstElement);
+						uoisElement.appendChild(languagesTabularElement);
+						
+						uoisElement.appendChild(digitalHubTabularFirstElement);
 						
 						//Extra logic for PIS Final Assets for Publish To Microsite
 						
@@ -276,11 +287,25 @@ public class AssetsXMLWriter {
 									ProcessorConstants.XML_PUB_TO_MICROSITE_OEMPIM_VALUE
 									);
 							
-							//uoisElement.appendChild(digitalHubTabularSecondElement);
+							uoisElement.appendChild(digitalHubTabularSecondElement);
+							
+							//10-03-2021 Start of Changes for Security Policy
+							
+							Element securityPolicyUOISSecondElement = 
+									doc.createElement(ProcessorConstants.XML_SECURITY_POLICY_ELEMENT);
+
+							securityPolicyUOISSecondElement.setAttribute(
+									ProcessorConstants.XML_SECURITY_POLICY_ID_ATTRIBUTE,
+									ProcessorConstants.XML_COMM_SECURITY_POLICY_ID
+									);
+							
+							uoisElement.appendChild(securityPolicyUOISSecondElement);
+							//10-03-2021 End of Changes for Security Policy
+							
 							
 						}
 						
-						uoisElement.appendChild(languagesTabularElement);
+						
 						
 						uoisElement.appendChild(securityPolicyUOISElement);
 

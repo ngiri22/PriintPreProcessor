@@ -188,6 +188,13 @@ public class ProcessorConstants {
 	public static final String X_REQUESTED_BY = "X-Requested-By";
 	
 	
+	//11-Mar-2021 Start of changes for Segment attribute
+	public static final String XML_SEGMENT_ATTRIBUTE = "SEGMENT";
+	
+	public static final String METADATA_SEGMENT_AUTOMOTIVE = 
+			Configurations.getInstance().getProperty("otmm.metadata.segment.automotive");
+	
+	//11-Mar-2021 End of changes for Segment attribute
 	
 	
 		
